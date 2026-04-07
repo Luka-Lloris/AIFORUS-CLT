@@ -19,29 +19,14 @@
 </head>
 <body><aside class="sidebar">
   <div class="sidebar-logo">
-<<<<<<< HEAD
     <img src="assets/logo_aiforus-clt.png" class="logo-img" alt="AIFORUS CLT+">
-=======
-    <img src="assets/logo_aiforus-clt.png" class="logo-img" alt="AIFORUS">
->>>>>>> 7192d57e8521adc2f18751e774f3e69ee1e6aca2
     <div class="user-info">
       <div class="user-avatar"><i data-lucide="circle-user" style="width:18px;height:18px;color:var(--accent)"></i></div>
       <div><div class="user-name">check_com</div><div class="user-company">한국인공지능검증원</div></div>
     </div>
   </div>
-<<<<<<< HEAD
   <nav class="sidebar-menu"><div class="menu-label">메뉴</div><a href="index.html" class="menu-item "><i data-lucide="layout-dashboard" class="icon-svg"></i>대시보드</a><a href="chances.html" class="menu-item "><i data-lucide="target" class="icon-svg"></i>지원사업</a><a href="news.html" class="menu-item active"><i data-lucide="newspaper" class="icon-svg"></i>지역·업종 뉴스</a></nav>
   <div class="sidebar-bottom"><a href="https://aicerti.com" target="_blank"><img src="assets/logo_kaic_grayscale.png" class="kaic-logo-img-gray" alt="KAIC"></a></div>
-=======
-  <nav class="sidebar-menu"><div class="menu-label">메뉴</div><a href="index.html" class="menu-item "><i data-lucide="layout-dashboard" class="icon-svg"></i>대시보드</a>
-<a href="chances.html" class="menu-item "><i data-lucide="target" class="icon-svg"></i>지원사업</a>
-<a href="news.html" class="menu-item active"><i data-lucide="newspaper" class="icon-svg"></i>지역·업종 뉴스</a>
-</nav>
-  <div class="sidebar-bottom">
-  <a href="https://aicerti.com" target="_blank">
-    <img src="assets/logo_kaic_grayscale.png" class="kaic-logo-img-gray" alt="KAIC">
-  </a>
->>>>>>> 7192d57e8521adc2f18751e774f3e69ee1e6aca2
 </aside>
 <div class="main">
   <div class="topbar">
@@ -225,15 +210,6 @@ function setTab(el){el.closest('.news-tabs').querySelectorAll('.news-tab').forEa
   el.addEventListener('touchstart',function(e){drag=true;startY=e.touches[0].clientY;startTop=el.getBoundingClientRect().top;el.style.transition='none';},{passive:true});
   document.addEventListener('touchmove',function(e){if(!drag)return;const t=Math.max(20,Math.min(window.innerHeight-el.offsetHeight-20,startTop+(e.touches[0].clientY-startY)));el.style.top=t+'px';el.style.transform='none';},{passive:true});
   document.addEventListener('touchend',function(){drag=false;el.style.transition='';});
-})();
-</script>
-<script>
-(function(){
-  const el=document.getElementById('floatingBtns');if(!el)return;
-  let drag=false,startY=0,startTop=0;
-  el.addEventListener('mousedown',function(e){drag=true;startY=e.clientY;startTop=el.getBoundingClientRect().top;el.style.transition='none';e.preventDefault();});
-  document.addEventListener('mousemove',function(e){if(!drag)return;const t=Math.max(20,Math.min(window.innerHeight-el.offsetHeight-20,startTop+(e.clientY-startY)));el.style.top=t+'px';el.style.transform='none';});
-  document.addEventListener('mouseup',function(){if(drag){drag=false;el.style.transition='';}});
 })();
 </script>
 <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>

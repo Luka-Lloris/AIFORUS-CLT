@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=1440"><title>지역·업종 뉴스 | AIFORUS CLT+</title><link rel="stylesheet" href="css/common.css">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1440">
+<title>지역·업종 뉴스 | AIFORUS CLT+</title>
+<link rel="stylesheet" href="css/common.css">
 <style>
-.news-tabs{display:flex;gap:4px;padding:3px;background:var(--bg);border-radius:10px;border:1px solid var(--border);width:fit-content;margin-bottom:20px}
-.news-tab{padding:7px 16px;border-radius:8px;font-size:12px;font-weight:600;cursor:pointer;transition:all .18s;color:var(--text-sub);border:none;background:transparent;font-family:'Noto Sans KR',sans-serif}
+.icon-svg{width:16px;height:16px}
+
+.news-tabs{display:flex;gap:4px;padding:3px;background:var(--bg);border-radius:10px;border:1px solid var(--border);width:fit-content;margin-bottom:20px;flex-wrap:wrap}
+.news-tab{padding:7px 16px;border-radius:8px;font-size:12px;font-weight:600;cursor:pointer;transition:all .18s;color:var(--text-sub);border:none;background:transparent;font-family:"Noto Sans KR",sans-serif}
 .news-tab.active{background:var(--primary);color:white;box-shadow:0 2px 8px rgba(21,101,192,.3)}
 .news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.news-sidebar{width:260px;min-width:260px;display:flex;flex-direction:column;gap:16px}
 .news-layout{display:grid;grid-template-columns:1fr 260px;gap:20px}
 .panel-box{background:white;border-radius:var(--radius);padding:18px;box-shadow:var(--shadow);border:1px solid var(--border)}
+
 </style>
 </head>
-<body>
-<aside class="sidebar">
+<body><aside class="sidebar">
   <div class="sidebar-logo">
+<<<<<<< HEAD
+    <img src="assets/logo_aiforus-clt.png" class="logo-img" alt="AIFORUS CLT+">
+=======
     <img src="assets/logo_aiforus-clt.png" class="logo-img" alt="AIFORUS">
+>>>>>>> 7192d57e8521adc2f18751e774f3e69ee1e6aca2
     <div class="user-info">
       <div class="user-avatar"><i data-lucide="circle-user" style="width:18px;height:18px;color:var(--accent)"></i></div>
       <div><div class="user-name">check_com</div><div class="user-company">한국인공지능검증원</div></div>
     </div>
   </div>
+<<<<<<< HEAD
+  <nav class="sidebar-menu"><div class="menu-label">메뉴</div><a href="index.html" class="menu-item "><i data-lucide="layout-dashboard" class="icon-svg"></i>대시보드</a><a href="chances.html" class="menu-item "><i data-lucide="target" class="icon-svg"></i>지원사업</a><a href="news.html" class="menu-item active"><i data-lucide="newspaper" class="icon-svg"></i>지역·업종 뉴스</a></nav>
+  <div class="sidebar-bottom"><a href="https://aicerti.com" target="_blank"><img src="assets/logo_kaic_grayscale.png" class="kaic-logo-img-gray" alt="KAIC"></a></div>
+=======
   <nav class="sidebar-menu"><div class="menu-label">메뉴</div><a href="index.html" class="menu-item "><i data-lucide="layout-dashboard" class="icon-svg"></i>대시보드</a>
 <a href="chances.html" class="menu-item "><i data-lucide="target" class="icon-svg"></i>지원사업</a>
 <a href="news.html" class="menu-item active"><i data-lucide="newspaper" class="icon-svg"></i>지역·업종 뉴스</a>
@@ -28,12 +41,13 @@
   <a href="https://aicerti.com" target="_blank">
     <img src="assets/logo_kaic_grayscale.png" class="kaic-logo-img-gray" alt="KAIC">
   </a>
+>>>>>>> 7192d57e8521adc2f18751e774f3e69ee1e6aca2
 </aside>
 <div class="main">
   <div class="topbar">
     <div class="page-title">지역·업종 <span>뉴스</span></div>
-    <div class="search-bar" style="margin-left:20px"><span><i data-lucide="search" style="width:15px;height:15px;color:var(--text-light)"></i></span><input type="text" placeholder="뉴스 검색..."></div>
-    <div style="margin-left:auto;font-size:12px;color:var(--text-sub)"><i data-lucide="refresh-cw" style="width:11px;height:11px"></i> 15분 전 갱신 · <strong style="color:var(--primary)">70개</strong> 소스</div>
+    <div class="search-bar" style="margin-left:20px"><i data-lucide="search" style="width:15px;height:15px;color:var(--text-light)"></i><input type="text" placeholder="뉴스 검색..."></div>
+    <div style="margin-left:auto;font-size:12px;color:var(--text-sub);display:flex;align-items:center;gap:4px"><i data-lucide="refresh-cw" style="width:12px;height:12px"></i> 15분 전 갱신 · <strong style="color:var(--primary)">70개</strong> 소스</div>
   </div>
   <div class="content">
     <div class="news-layout">
@@ -49,20 +63,17 @@
           <button class="news-tab" onclick="setTab(this)">창업</button>
           <button class="news-tab" onclick="setTab(this)">정책</button>
         </div>
-        <div class="news-grid">
-          <div style="background:white;border-radius:12px;padding:18px;border:1.5px solid var(--border);box-shadow:var(--shadow);cursor:pointer;transition:all .2s" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='var(--shadow-lg)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow)'">
+        <div class="news-grid"><div style="background:white;border-radius:12px;padding:18px;border:1.5px solid var(--border);box-shadow:var(--shadow);cursor:pointer;transition:all .2s" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='var(--shadow-lg)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow)'">
   <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px">
     <span style="font-size:10px;font-weight:700;padding:3px 10px;border-radius:12px;background:#1565C018;color:#1565C0">FOR YOU</span>
     <span style="font-size:11px;font-weight:700;color:var(--accent);background:var(--accent-light);padding:3px 8px;border-radius:8px">관련도 94%</span>
   </div>
   <div style="font-size:14px;font-weight:700;color:var(--text);line-height:1.45;margin-bottom:10px">AI 반도체 수출 규제 완화…국내 기업 기회 확대</div>
   <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;font-size:11px;color:var(--text-sub)">
-    <span>🏷️ 중소기업·수출</span><span><i data-lucide="clock" style="width:10px;height:10px"></i> 13분 전</span>
+    <span style="display:flex;align-items:center;gap:3px"><i data-lucide="tag" style="width:10px;height:10px"></i> 중소기업·수출</span>
+    <span style="display:flex;align-items:center;gap:3px"><i data-lucide="clock" style="width:10px;height:10px"></i> 13분 전</span>
   </div>
-  <div style="display:flex;gap:5px;flex-wrap:wrap">
-    <span style="font-size:10px;padding:2px 8px;border-radius:10px;background:#E3F2FD;color:#1565C0;font-weight:600">#AI반도체</span><span style="font-size:10px;padding:2px 8px;border-radius:10px;background:#E3F2FD;color:#1565C0;font-weight:600">#수출</span>
-  </div>
-  <div style="margin-top:12px;font-size:11px;font-weight:700;color:var(--primary);cursor:pointer">전문보기 →</div>
+  <div style="margin-top:10px;font-size:11px;font-weight:700;color:var(--primary);cursor:pointer;display:flex;align-items:center;gap:3px">전문보기 <i data-lucide="arrow-right" style="width:11px;height:11px"></i></div>
 </div><div style="background:white;border-radius:12px;padding:18px;border:1.5px solid var(--border);box-shadow:var(--shadow);cursor:pointer;transition:all .2s" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='var(--shadow-lg)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow)'">
   <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px">
     <span style="font-size:10px;font-weight:700;padding:3px 10px;border-radius:12px;background:#1565C018;color:#1565C0">FOR YOU</span>
@@ -70,12 +81,10 @@
   </div>
   <div style="font-size:14px;font-weight:700;color:var(--text);line-height:1.45;margin-bottom:10px">2026년 창업지원 예산 역대 최대…1조 3천억 편성</div>
   <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;font-size:11px;color:var(--text-sub)">
-    <span>🏷️ 창업·정책</span><span><i data-lucide="clock" style="width:10px;height:10px"></i> 28분 전</span>
+    <span style="display:flex;align-items:center;gap:3px"><i data-lucide="tag" style="width:10px;height:10px"></i> 창업·정책</span>
+    <span style="display:flex;align-items:center;gap:3px"><i data-lucide="clock" style="width:10px;height:10px"></i> 28분 전</span>
   </div>
-  <div style="display:flex;gap:5px;flex-wrap:wrap">
-    <span style="font-size:10px;padding:2px 8px;border-radius:10px;background:#E3F2FD;color:#1565C0;font-weight:600">#창업지원</span><span style="font-size:10px;padding:2px 8px;border-radius:10px;background:#E3F2FD;color:#1565C0;font-weight:600">#R&D</span>
-  </div>
-  <div style="margin-top:12px;font-size:11px;font-weight:700;color:var(--primary);cursor:pointer">전문보기 →</div>
+  <div style="margin-top:10px;font-size:11px;font-weight:700;color:var(--primary);cursor:pointer;display:flex;align-items:center;gap:3px">전문보기 <i data-lucide="arrow-right" style="width:11px;height:11px"></i></div>
 </div><div style="background:white;border-radius:12px;padding:18px;border:1.5px solid var(--border);box-shadow:var(--shadow);cursor:pointer;transition:all .2s" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='var(--shadow-lg)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow)'">
   <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px">
     <span style="font-size:10px;font-weight:700;padding:3px 10px;border-radius:12px;background:#1565C018;color:#1565C0">FOR YOU</span>
@@ -83,12 +92,10 @@
   </div>
   <div style="font-size:14px;font-weight:700;color:var(--text);line-height:1.45;margin-bottom:10px">GPU 기반 클라우드 서비스 도입 보조금 신청 안내</div>
   <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;font-size:11px;color:var(--text-sub)">
-    <span>🏷️ IT·SW</span><span><i data-lucide="clock" style="width:10px;height:10px"></i> 1시간 전</span>
+    <span style="display:flex;align-items:center;gap:3px"><i data-lucide="tag" style="width:10px;height:10px"></i> IT·SW</span>
+    <span style="display:flex;align-items:center;gap:3px"><i data-lucide="clock" style="width:10px;height:10px"></i> 1시간 전</span>
   </div>
-  <div style="display:flex;gap:5px;flex-wrap:wrap">
-    <span style="font-size:10px;padding:2px 8px;border-radius:10px;background:#E3F2FD;color:#1565C0;font-weight:600">#GPU</span><span style="font-size:10px;padding:2px 8px;border-radius:10px;background:#E3F2FD;color:#1565C0;font-weight:600">#클라우드</span>
-  </div>
-  <div style="margin-top:12px;font-size:11px;font-weight:700;color:var(--primary);cursor:pointer">전문보기 →</div>
+  <div style="margin-top:10px;font-size:11px;font-weight:700;color:var(--primary);cursor:pointer;display:flex;align-items:center;gap:3px">전문보기 <i data-lucide="arrow-right" style="width:11px;height:11px"></i></div>
 </div><div style="background:white;border-radius:12px;padding:18px;border:1.5px solid var(--border);box-shadow:var(--shadow);cursor:pointer;transition:all .2s" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='var(--shadow-lg)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow)'">
   <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px">
     <span style="font-size:10px;font-weight:700;padding:3px 10px;border-radius:12px;background:#6A1B9A18;color:#6A1B9A">커머스</span>
@@ -96,12 +103,10 @@
   </div>
   <div style="font-size:14px;font-weight:700;color:var(--text);line-height:1.45;margin-bottom:10px">K-뷰티 수출 플랫폼 구축 지원사업 모집 시작</div>
   <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;font-size:11px;color:var(--text-sub)">
-    <span>🏷️ 유통·커머스</span><span><i data-lucide="clock" style="width:10px;height:10px"></i> 2시간 전</span>
+    <span style="display:flex;align-items:center;gap:3px"><i data-lucide="tag" style="width:10px;height:10px"></i> 유통·커머스</span>
+    <span style="display:flex;align-items:center;gap:3px"><i data-lucide="clock" style="width:10px;height:10px"></i> 2시간 전</span>
   </div>
-  <div style="display:flex;gap:5px;flex-wrap:wrap">
-    <span style="font-size:10px;padding:2px 8px;border-radius:10px;background:#E3F2FD;color:#1565C0;font-weight:600">#수출</span><span style="font-size:10px;padding:2px 8px;border-radius:10px;background:#E3F2FD;color:#1565C0;font-weight:600">#커머스</span>
-  </div>
-  <div style="margin-top:12px;font-size:11px;font-weight:700;color:var(--primary);cursor:pointer">전문보기 →</div>
+  <div style="margin-top:10px;font-size:11px;font-weight:700;color:var(--primary);cursor:pointer;display:flex;align-items:center;gap:3px">전문보기 <i data-lucide="arrow-right" style="width:11px;height:11px"></i></div>
 </div><div style="background:white;border-radius:12px;padding:18px;border:1.5px solid var(--border);box-shadow:var(--shadow);cursor:pointer;transition:all .2s" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='var(--shadow-lg)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow)'">
   <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px">
     <span style="font-size:10px;font-weight:700;padding:3px 10px;border-radius:12px;background:#00897B18;color:#00897B">바이오</span>
@@ -109,12 +114,10 @@
   </div>
   <div style="font-size:14px;font-weight:700;color:var(--text);line-height:1.45;margin-bottom:10px">바이오헬스 창업 생태계 지원 확대 정책 발표</div>
   <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;font-size:11px;color:var(--text-sub)">
-    <span>🏷️ 바이오·헬스</span><span><i data-lucide="clock" style="width:10px;height:10px"></i> 3시간 전</span>
+    <span style="display:flex;align-items:center;gap:3px"><i data-lucide="tag" style="width:10px;height:10px"></i> 바이오·헬스</span>
+    <span style="display:flex;align-items:center;gap:3px"><i data-lucide="clock" style="width:10px;height:10px"></i> 3시간 전</span>
   </div>
-  <div style="display:flex;gap:5px;flex-wrap:wrap">
-    <span style="font-size:10px;padding:2px 8px;border-radius:10px;background:#E3F2FD;color:#1565C0;font-weight:600">#바이오</span><span style="font-size:10px;padding:2px 8px;border-radius:10px;background:#E3F2FD;color:#1565C0;font-weight:600">#창업</span>
-  </div>
-  <div style="margin-top:12px;font-size:11px;font-weight:700;color:var(--primary);cursor:pointer">전문보기 →</div>
+  <div style="margin-top:10px;font-size:11px;font-weight:700;color:var(--primary);cursor:pointer;display:flex;align-items:center;gap:3px">전문보기 <i data-lucide="arrow-right" style="width:11px;height:11px"></i></div>
 </div><div style="background:white;border-radius:12px;padding:18px;border:1.5px solid var(--border);box-shadow:var(--shadow);cursor:pointer;transition:all .2s" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='var(--shadow-lg)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow)'">
   <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px">
     <span style="font-size:10px;font-weight:700;padding:3px 10px;border-radius:12px;background:#E6510018;color:#E65100">정책</span>
@@ -122,12 +125,10 @@
   </div>
   <div style="font-size:14px;font-weight:700;color:var(--text);line-height:1.45;margin-bottom:10px">중소기업 ESG 경영 컨설팅 무료 지원 확대</div>
   <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;font-size:11px;color:var(--text-sub)">
-    <span>🏷️ 정책·ESG</span><span><i data-lucide="clock" style="width:10px;height:10px"></i> 4시간 전</span>
+    <span style="display:flex;align-items:center;gap:3px"><i data-lucide="tag" style="width:10px;height:10px"></i> 정책·ESG</span>
+    <span style="display:flex;align-items:center;gap:3px"><i data-lucide="clock" style="width:10px;height:10px"></i> 4시간 전</span>
   </div>
-  <div style="display:flex;gap:5px;flex-wrap:wrap">
-    <span style="font-size:10px;padding:2px 8px;border-radius:10px;background:#E3F2FD;color:#1565C0;font-weight:600">#ESG</span><span style="font-size:10px;padding:2px 8px;border-radius:10px;background:#E3F2FD;color:#1565C0;font-weight:600">#중소기업</span>
-  </div>
-  <div style="margin-top:12px;font-size:11px;font-weight:700;color:var(--primary);cursor:pointer">전문보기 →</div>
+  <div style="margin-top:10px;font-size:11px;font-weight:700;color:var(--primary);cursor:pointer;display:flex;align-items:center;gap:3px">전문보기 <i data-lucide="arrow-right" style="width:11px;height:11px"></i></div>
 </div><div style="background:white;border-radius:12px;padding:18px;border:1.5px solid var(--border);box-shadow:var(--shadow);cursor:pointer;transition:all .2s" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='var(--shadow-lg)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow)'">
   <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px">
     <span style="font-size:10px;font-weight:700;padding:3px 10px;border-radius:12px;background:#1976D218;color:#1976D2">IT·SW</span>
@@ -135,12 +136,10 @@
   </div>
   <div style="font-size:14px;font-weight:700;color:var(--text);line-height:1.45;margin-bottom:10px">국내 SaaS 기업 글로벌 진출 지원금 공모</div>
   <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;font-size:11px;color:var(--text-sub)">
-    <span>🏷️ IT·SW</span><span><i data-lucide="clock" style="width:10px;height:10px"></i> 5시간 전</span>
+    <span style="display:flex;align-items:center;gap:3px"><i data-lucide="tag" style="width:10px;height:10px"></i> IT·SW</span>
+    <span style="display:flex;align-items:center;gap:3px"><i data-lucide="clock" style="width:10px;height:10px"></i> 5시간 전</span>
   </div>
-  <div style="display:flex;gap:5px;flex-wrap:wrap">
-    <span style="font-size:10px;padding:2px 8px;border-radius:10px;background:#E3F2FD;color:#1565C0;font-weight:600">#SaaS</span><span style="font-size:10px;padding:2px 8px;border-radius:10px;background:#E3F2FD;color:#1565C0;font-weight:600">#글로벌</span>
-  </div>
-  <div style="margin-top:12px;font-size:11px;font-weight:700;color:var(--primary);cursor:pointer">전문보기 →</div>
+  <div style="margin-top:10px;font-size:11px;font-weight:700;color:var(--primary);cursor:pointer;display:flex;align-items:center;gap:3px">전문보기 <i data-lucide="arrow-right" style="width:11px;height:11px"></i></div>
 </div><div style="background:white;border-radius:12px;padding:18px;border:1.5px solid var(--border);box-shadow:var(--shadow);cursor:pointer;transition:all .2s" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='var(--shadow-lg)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow)'">
   <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px">
     <span style="font-size:10px;font-weight:700;padding:3px 10px;border-radius:12px;background:#5D403718;color:#5D4037">제조</span>
@@ -148,19 +147,16 @@
   </div>
   <div style="font-size:14px;font-weight:700;color:var(--text);line-height:1.45;margin-bottom:10px">스마트공장 고도화 지원 2차 모집…600개사 선정</div>
   <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;font-size:11px;color:var(--text-sub)">
-    <span>🏷️ 제조</span><span><i data-lucide="clock" style="width:10px;height:10px"></i> 6시간 전</span>
+    <span style="display:flex;align-items:center;gap:3px"><i data-lucide="tag" style="width:10px;height:10px"></i> 제조</span>
+    <span style="display:flex;align-items:center;gap:3px"><i data-lucide="clock" style="width:10px;height:10px"></i> 6시간 전</span>
   </div>
-  <div style="display:flex;gap:5px;flex-wrap:wrap">
-    <span style="font-size:10px;padding:2px 8px;border-radius:10px;background:#E3F2FD;color:#1565C0;font-weight:600">#스마트공장</span><span style="font-size:10px;padding:2px 8px;border-radius:10px;background:#E3F2FD;color:#1565C0;font-weight:600">#제조</span>
-  </div>
-  <div style="margin-top:12px;font-size:11px;font-weight:700;color:var(--primary);cursor:pointer">전문보기 →</div>
-</div>
-        </div>
+  <div style="margin-top:10px;font-size:11px;font-weight:700;color:var(--primary);cursor:pointer;display:flex;align-items:center;gap:3px">전문보기 <i data-lucide="arrow-right" style="width:11px;height:11px"></i></div>
+</div></div>
       </div>
-      <div class="news-sidebar">
+      <div style="display:flex;flex-direction:column;gap:16px">
         <div class="panel-box">
-          <div style="font-size:12px;font-weight:700;color:var(--text-sub);letter-spacing:.5px;text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:3px;height:14px;background:var(--accent);border-radius:2px"></span>관심 키워드 기반 추천</div>
-          <div style="display:flex;flex-wrap:wrap;gap:7px;margin-bottom:16px">
+          <div style="font-size:11px;font-weight:700;color:var(--text-sub);letter-spacing:.5px;text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:3px;height:14px;background:var(--accent);border-radius:2px"></span>관심 키워드 기반 추천</div>
+          <div style="display:flex;flex-wrap:wrap;gap:7px;margin-bottom:12px">
             <div style="padding:5px 12px;border-radius:20px;background:linear-gradient(90deg,var(--primary-dark),var(--primary));color:white;font-size:12px;font-weight:600">#AI반도체</div>
             <div style="padding:5px 12px;border-radius:20px;background:linear-gradient(90deg,var(--primary-dark),var(--primary));color:white;font-size:12px;font-weight:600">#수출</div>
             <div style="padding:5px 12px;border-radius:20px;background:linear-gradient(90deg,var(--primary-dark),var(--primary));color:white;font-size:12px;font-weight:600">#R&amp;D</div>
@@ -170,33 +166,25 @@
           <div style="font-size:11px;color:var(--text-light)">키워드 관리에서 수정 가능합니다</div>
         </div>
         <div class="panel-box">
-          <div style="font-size:12px;font-weight:700;color:var(--text-sub);letter-spacing:.5px;text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:3px;height:14px;background:var(--accent);border-radius:2px"></span>지역별 핫 뉴스</div>
+          <div style="font-size:11px;font-weight:700;color:var(--text-sub);letter-spacing:.5px;text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:3px;height:14px;background:var(--accent);border-radius:2px"></span>지역별 핫 뉴스</div>
           <div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid #F0F5FF;font-size:12px"><div style="font-size:11px;font-weight:700;color:white;background:var(--primary);padding:2px 8px;border-radius:6px;min-width:36px;text-align:center">서울</div><div style="flex:1;color:var(--text);font-weight:500">AI 창업 허브 입주 모집</div><div style="font-size:11px;color:var(--text-light)">12건</div></div><div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid #F0F5FF;font-size:12px"><div style="font-size:11px;font-weight:700;color:white;background:var(--primary);padding:2px 8px;border-radius:6px;min-width:36px;text-align:center">경기</div><div style="flex:1;color:var(--text);font-weight:500">스마트공장 지원사업</div><div style="font-size:11px;color:var(--text-light)">8건</div></div><div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid #F0F5FF;font-size:12px"><div style="font-size:11px;font-weight:700;color:white;background:var(--primary);padding:2px 8px;border-radius:6px;min-width:36px;text-align:center">부산</div><div style="flex:1;color:var(--text);font-weight:500">글로벌 수출 박람회</div><div style="font-size:11px;color:var(--text-light)">6건</div></div><div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid #F0F5FF;font-size:12px"><div style="font-size:11px;font-weight:700;color:white;background:var(--primary);padding:2px 8px;border-radius:6px;min-width:36px;text-align:center">인천</div><div style="flex:1;color:var(--text);font-weight:500">바이오 클러스터 지원</div><div style="font-size:11px;color:var(--text-light)">5건</div></div><div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid #F0F5FF;font-size:12px"><div style="font-size:11px;font-weight:700;color:white;background:var(--primary);padding:2px 8px;border-radius:6px;min-width:36px;text-align:center">대전</div><div style="flex:1;color:var(--text);font-weight:500">R&D 특화 단지 조성</div><div style="font-size:11px;color:var(--text-light)">4건</div></div>
-        </div>
-        <div class="panel-box" style="background:linear-gradient(135deg,#EEF4FC,#F5F9FF)">
-          <div style="font-size:12px;font-weight:700;color:var(--text-sub);letter-spacing:.5px;text-transform:uppercase;margin-bottom:12px">AI 뉴스 수집 현황</div>
-          <div style="font-size:12px;color:var(--text-sub);line-height:2.2">
-            <div>📡 <strong style="color:var(--primary)">70개+</strong> 뉴스 소스 연동</div>
-            <div><i data-lucide="refresh-cw" style="width:11px;height:11px"></i> <strong style="color:var(--primary)">15분</strong> 주기 자동 갱신</div>
-            <div>🤖 <strong style="color:var(--primary)">FOR YOU</strong> AI 큐레이션</div>
-            <div><i data-lucide="bar-chart-2" style="width:11px;height:11px"></i> 오늘 수집 <strong style="color:var(--primary)">1,240건</strong></div>
-          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-<div class="floating-btns">
-  <div class="float-btn" onclick="openPanel('mypage')"><div class="float-icon">👤</div><div class="float-label">마이</div></div>
-  <div class="float-btn" onclick="openPanel('keyword')"><div class="float-icon">🏷️</div><div class="float-label">키워드</div></div>
-  <div class="float-btn"><div class="float-icon">📌</div><div class="float-label">저장</div></div>
+
+<div class="floating-btns" id="floatingBtns">
+  <div class="float-btn" onclick="openPanel('mypage')"><i data-lucide="user" style="width:18px;height:18px"></i><div class="float-label">마이</div></div>
+  <div class="float-btn" onclick="openPanel('keyword')"><i data-lucide="tag" style="width:18px;height:18px"></i><div class="float-label">키워드</div></div>
+  <div class="float-btn"><i data-lucide="bookmark" style="width:18px;height:18px"></i><div class="float-label">저장</div></div>
 </div>
 <div class="slide-overlay" id="overlay" onclick="closePanel()"></div>
 <div class="slide-panel" id="panel-mypage">
-  <div class="panel-header"><div><div class="panel-header-title">마이 페이지</div><div class="panel-header-sub">프로필 및 알림 설정</div></div><button class="close-btn" onclick="closePanel()">✕</button></div>
+  <div class="panel-header"><div><div class="panel-header-title">마이 페이지</div><div class="panel-header-sub">프로필 및 알림 설정</div></div><button class="close-btn" onclick="closePanel()"><i data-lucide="x" style="width:16px;height:16px"></i></button></div>
   <div class="panel-body">
-    <div class="ob-banner"><span style="font-size:20px">🚀</span><div style="flex:1"><div class="ob-title">예비창업자 온보딩</div><div class="ob-desc">사업자등록번호를 입력하시면 맞춤 지원사업을 추천해 드려요.</div></div><div class="ob-btn">바로가기</div></div>
-    <div class="mypage-avatar"><div class="avatar-circle">🐱</div><div class="mypage-name">check_com</div><div class="mypage-email">check@company.com</div></div>
+    <div class="ob-banner"><i data-lucide="rocket" style="width:20px;height:20px;color:var(--primary)"></i><div style="flex:1"><div class="ob-title">예비창업자 온보딩</div><div class="ob-desc">사업자등록번호를 입력하시면 맞춤 지원사업을 추천해 드려요.</div></div><div class="ob-btn">바로가기</div></div>
+    <div class="mypage-avatar"><div class="avatar-circle"><i data-lucide="user-circle" style="width:36px;height:36px;color:var(--primary)"></i></div><div class="mypage-name">check_com</div><div class="mypage-email">check@company.com</div></div>
     <div class="field-group">
       <div class="field-item"><div class="field-content"><div class="field-lbl">이름</div><div class="field-val">chck_com</div></div><div class="edit-btn">수정</div></div>
       <div class="field-item"><div class="field-content"><div class="field-lbl">이메일</div><div class="field-val">check@company.com</div></div><div class="edit-btn">수정</div></div>
@@ -204,7 +192,7 @@
       <div class="field-item"><div class="field-content"><div class="field-lbl">관심지역</div><div class="field-val">서울, 경기</div></div><div class="edit-btn">수정</div></div>
       <div class="field-item"><div class="field-content"><div class="field-lbl">업종</div><div class="field-val">IT / 소프트웨어</div></div><div class="edit-btn">수정</div></div>
     </div>
-    <div class="alarm-section-title">⚙️ 알림 설정</div>
+    <div class="alarm-section-title"><i data-lucide="settings" style="width:14px;height:14px"></i> 알림 설정</div>
     <div class="toggle-row"><div class="toggle-info"><div class="toggle-label">이메일 알림</div><div class="toggle-desc">새로운 지원사업 이메일로 받기</div></div><div class="toggle on" onclick="this.classList.toggle('on')"></div></div>
     <div class="toggle-row"><div class="toggle-info"><div class="toggle-label">신규 지원사업 알림</div><div class="toggle-desc">추천 지원사업 업데이트 알림</div></div><div class="toggle on" onclick="this.classList.toggle('on')"></div></div>
     <div class="toggle-row"><div class="toggle-info"><div class="toggle-label">마감 D-3 알림</div><div class="toggle-desc">지원 마감 3일전 알림</div></div><div class="toggle" onclick="this.classList.toggle('on')"></div></div>
@@ -212,7 +200,7 @@
   </div>
 </div>
 <div class="slide-panel" id="panel-keyword">
-  <div class="panel-header"><div><div class="panel-header-title">키워드 관리</div><div class="panel-header-sub">키워드를 설정하면 맞춤 지원사업을 추천해 드려요.</div></div><button class="close-btn" onclick="closePanel()">✕</button></div>
+  <div class="panel-header"><div><div class="panel-header-title">키워드 관리</div><div class="panel-header-sub">키워드를 설정하면 맞춤 지원사업을 추천해 드려요.</div></div><button class="close-btn" onclick="closePanel()"><i data-lucide="x" style="width:16px;height:16px"></i></button></div>
   <div class="panel-body">
     <div class="kw-panel-stats"><div class="kw-panel-count">128건</div><div class="kw-panel-label">현재 지원사업 매칭중</div></div>
     <div class="kw-group"><div class="kw-group-title">현재 추천 키워드 <span class="kw-count-badge">6</span></div><div class="kw-chips-wrap"><div class="kw-tag current">#AI반도체 ✕</div><div class="kw-tag current">#수출 ✕</div><div class="kw-tag current">#R&amp;D ✕</div><div class="kw-tag current">#GPU ✕</div><div class="kw-tag current">#창업지원 ✕</div><div class="kw-tag current">#기후변화 ✕</div></div></div>
@@ -225,10 +213,19 @@
 <script>
 function openPanel(n){document.getElementById('overlay').classList.add('open');['mypage','keyword'].forEach(x=>document.getElementById('panel-'+x).classList.remove('open'));document.getElementById('panel-'+n).classList.add('open');}
 function closePanel(){document.getElementById('overlay').classList.remove('open');['mypage','keyword'].forEach(x=>document.getElementById('panel-'+x).classList.remove('open'));}
-function setChip(el){el.closest('.filter-chips').querySelectorAll('.chip').forEach(c=>c.classList.remove('active'));el.classList.add('active');}
-</script>
-<script>
+function setChip(el){const p=el.closest('.filter-chips');if(p)p.querySelectorAll('.chip').forEach(c=>c.classList.remove('active'));el.classList.add('active');}
 function setTab(el){el.closest('.news-tabs').querySelectorAll('.news-tab').forEach(t=>t.classList.remove('active'));el.classList.add('active');}
+
+(function(){
+  const el=document.getElementById('floatingBtns');if(!el)return;
+  let drag=false,startY=0,startTop=0;
+  el.addEventListener('mousedown',function(e){drag=true;startY=e.clientY;startTop=el.getBoundingClientRect().top;el.style.transition='none';e.preventDefault();});
+  document.addEventListener('mousemove',function(e){if(!drag)return;const t=Math.max(20,Math.min(window.innerHeight-el.offsetHeight-20,startTop+(e.clientY-startY)));el.style.top=t+'px';el.style.transform='none';});
+  document.addEventListener('mouseup',function(){if(drag){drag=false;el.style.transition='';}});
+  el.addEventListener('touchstart',function(e){drag=true;startY=e.touches[0].clientY;startTop=el.getBoundingClientRect().top;el.style.transition='none';},{passive:true});
+  document.addEventListener('touchmove',function(e){if(!drag)return;const t=Math.max(20,Math.min(window.innerHeight-el.offsetHeight-20,startTop+(e.touches[0].clientY-startY)));el.style.top=t+'px';el.style.transform='none';},{passive:true});
+  document.addEventListener('touchend',function(){drag=false;el.style.transition='';});
+})();
 </script>
 <script>
 (function(){

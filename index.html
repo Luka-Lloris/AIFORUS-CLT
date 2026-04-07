@@ -1,28 +1,44 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=1440"><title>대시보드 | AIFORUS CLT+</title><link rel="stylesheet" href="css/common.css">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1440">
+<title>대시보드 | AIFORUS CLT+</title>
+<link rel="stylesheet" href="css/common.css">
 <style>
+.icon-svg{width:16px;height:16px}
+
 .dash-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:24px}
 .stat-card{background:white;border-radius:12px;padding:20px 24px;display:flex;align-items:center;gap:16px;box-shadow:var(--shadow);border:1px solid var(--border);transition:transform .18s}
 .stat-card:hover{transform:translateY(-2px)}
-.stat-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px}
+.stat-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center}
 .dash-grid{display:grid;grid-template-columns:1fr 280px;gap:20px}
 .ai-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.pop-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
 .deadline-item{background:white;border-radius:8px;padding:12px 14px;display:flex;align-items:center;gap:10px;box-shadow:var(--shadow);border:1px solid var(--border);cursor:pointer;transition:all .18s;margin-bottom:8px}
 .deadline-item:hover{border-color:var(--danger);transform:translateX(3px)}
 .dday-badge{font-size:10px;font-weight:800;padding:4px 8px;border-radius:6px;background:#FFEBEE;color:var(--danger);min-width:44px;text-align:center}
 .panel-box{background:white;border-radius:var(--radius);padding:18px;box-shadow:var(--shadow);border:1px solid var(--border)}
+.hot-badge{display:inline-flex;align-items:center;gap:4px;font-size:10px;font-weight:700;padding:2px 8px;border-radius:10px;background:linear-gradient(90deg,#FF6F00,#FFB300);color:white}
+
 </style>
 </head>
-<body>
-<aside class="sidebar">
+<body><aside class="sidebar">
   <div class="sidebar-logo">
+<<<<<<< HEAD
+    <img src="assets/logo_aiforus-clt.png" class="logo-img" alt="AIFORUS CLT+">
+=======
     <img src="assets/logo_aiforus-clt.png" class="logo-img" alt="AIFORUS">
+>>>>>>> 7192d57e8521adc2f18751e774f3e69ee1e6aca2
     <div class="user-info">
       <div class="user-avatar"><i data-lucide="circle-user" style="width:18px;height:18px;color:var(--accent)"></i></div>
       <div><div class="user-name">check_com</div><div class="user-company">한국인공지능검증원</div></div>
     </div>
   </div>
+<<<<<<< HEAD
+  <nav class="sidebar-menu"><div class="menu-label">메뉴</div><a href="index.html" class="menu-item active"><i data-lucide="layout-dashboard" class="icon-svg"></i>대시보드</a><a href="chances.html" class="menu-item "><i data-lucide="target" class="icon-svg"></i>지원사업</a><a href="news.html" class="menu-item "><i data-lucide="newspaper" class="icon-svg"></i>지역·업종 뉴스</a></nav>
+  <div class="sidebar-bottom"><a href="https://aicerti.com" target="_blank"><img src="assets/logo_kaic_grayscale.png" class="kaic-logo-img-gray" alt="KAIC"></a></div>
+=======
   <nav class="sidebar-menu"><div class="menu-label">메뉴</div><a href="index.html" class="menu-item active"><i data-lucide="layout-dashboard" class="icon-svg"></i>대시보드</a>
 <a href="chances.html" class="menu-item "><i data-lucide="target" class="icon-svg"></i>지원사업</a>
 <a href="news.html" class="menu-item "><i data-lucide="newspaper" class="icon-svg"></i>지역·업종 뉴스</a>
@@ -31,11 +47,12 @@
   <a href="https://aicerti.com" target="_blank">
     <img src="assets/logo_kaic_grayscale.png" class="kaic-logo-img-gray" alt="KAIC">
   </a>
+>>>>>>> 7192d57e8521adc2f18751e774f3e69ee1e6aca2
 </aside>
 <div class="main">
   <div class="topbar">
     <div class="page-title">대시보드 <span>· AI 맞춤 추천</span></div>
-    <div class="search-bar" style="margin-left:20px"><span><i data-lucide="search" style="width:15px;height:15px;color:var(--text-light)"></i></span><input type="text" placeholder="지원사업, 뉴스 검색..."></div>
+    <div class="search-bar" style="margin-left:20px"><i data-lucide="search" style="width:15px;height:15px;color:var(--text-light)"></i><input type="text" placeholder="지원사업, 뉴스 검색..."></div>
   </div>
   <div class="content">
     <div class="dash-stats">
@@ -46,73 +63,72 @@
     <div class="dash-grid">
       <div>
         <div class="section-header"><div class="section-title">AI 맞춤 추천 지원사업</div><a href="chances.html" class="view-all">전체 보기 →</a></div>
-        <div class="ai-cards">
-          <div class="support-card featured"><div class="card-top"><span class="match-badge high">매칭 91%</span><span class="detail-btn">더보기 ▶</span></div><div class="card-title">2026년 1차 첨단 GPU 활용<br>지원 사업 사용자 모집</div><div class="card-meta"><span><i data-lucide="map-pin" style="width:11px;height:11px"></i> 서울</span><span class="dday"><i data-lucide="calendar" style="width:11px;height:11px"></i> 2026-03-30 D-Day</span></div><div class="card-tags"><span class="tag">기업마당</span><span class="tag green">기술</span></div></div>
-          <div class="support-card"><div class="card-top"><span class="match-badge mid">매칭 69%</span><span class="detail-btn">더보기 ▶</span></div><div class="card-title">2026년 2차 부산국제항공회의엑스포<br>참가 지원 공고</div><div class="card-meta"><span><i data-lucide="map-pin" style="width:11px;height:11px"></i> 서울</span><span class="dday"><i data-lucide="calendar" style="width:11px;height:11px"></i> 2026-03-30 D-Day</span></div><div class="card-tags"><span class="tag">기업마당</span><span class="tag purple">지원사업</span><span class="tag orange">수출</span></div></div>
-          <div class="support-card"><div class="card-top"><span class="match-badge mid">매칭 58%</span><span class="detail-btn">더보기 ▶</span></div><div class="card-title">2026년 AI반도체를 활용한<br>K-클라우드 기술개발 사업 공고</div><div class="card-meta"><span><i data-lucide="map-pin" style="width:11px;height:11px"></i> 서울</span><span class="dday"><i data-lucide="calendar" style="width:11px;height:11px"></i> 2026-03-30 D-Day</span></div><div class="card-tags"><span class="tag">기업마당</span><span class="tag purple">지원사업</span><span class="tag green">기술</span></div></div>
-          <div class="support-card"><div class="card-top"><span class="match-badge low">매칭 47%</span><span class="detail-btn">더보기 ▶</span></div><div class="card-title">저탄소·기후 변화 대응을 위한<br>지속성장(R&amp;D) 사업 공고</div><div class="card-meta"><span><i data-lucide="map-pin" style="width:11px;height:11px"></i> 서울</span><span><i data-lucide="calendar" style="width:11px;height:11px"></i> 2026-03-30</span></div><div class="card-tags"><span class="tag">기업마당</span><span class="tag purple">지원사업</span><span class="tag green">기술</span></div></div>
+        <div class="ai-cards" style="margin-bottom:28px">
+          <div class="support-card featured"><div class="card-top"><span class="match-badge high">매칭 91%</span><span class="detail-btn">더보기 <i data-lucide="chevron-right" style="width:12px;height:12px"></i></span></div><div class="card-title">2026년 1차 첨단 GPU 활용<br>지원 사업 사용자 모집</div><div class="card-meta"><span><i data-lucide="map-pin" style="width:11px;height:11px"></i> 서울</span><span class="dday"><i data-lucide="calendar" style="width:11px;height:11px"></i> 2026-03-30 D-Day</span></div><div class="card-tags"><span class="tag">기업마당</span><span class="tag green">기술</span></div></div>
+          <div class="support-card"><div class="card-top"><span class="match-badge mid">매칭 69%</span><span class="detail-btn">더보기 <i data-lucide="chevron-right" style="width:12px;height:12px"></i></span></div><div class="card-title">2026년 2차 부산국제항공회의엑스포<br>참가 지원 공고</div><div class="card-meta"><span><i data-lucide="map-pin" style="width:11px;height:11px"></i> 서울</span><span class="dday"><i data-lucide="calendar" style="width:11px;height:11px"></i> 2026-03-30 D-Day</span></div><div class="card-tags"><span class="tag">기업마당</span><span class="tag purple">지원사업</span><span class="tag orange">수출</span></div></div>
+          <div class="support-card"><div class="card-top"><span class="match-badge mid">매칭 58%</span><span class="detail-btn">더보기 <i data-lucide="chevron-right" style="width:12px;height:12px"></i></span></div><div class="card-title">2026년 AI반도체를 활용한<br>K-클라우드 기술개발 사업 공고</div><div class="card-meta"><span><i data-lucide="map-pin" style="width:11px;height:11px"></i> 서울</span><span class="dday"><i data-lucide="calendar" style="width:11px;height:11px"></i> 2026-03-30 D-Day</span></div><div class="card-tags"><span class="tag">기업마당</span><span class="tag purple">지원사업</span><span class="tag green">기술</span></div></div>
+          <div class="support-card"><div class="card-top"><span class="match-badge low">매칭 47%</span><span class="detail-btn">더보기 <i data-lucide="chevron-right" style="width:12px;height:12px"></i></span></div><div class="card-title">저탄소·기후 변화 대응을 위한<br>지속성장(R&amp;D) 사업 공고</div><div class="card-meta"><span><i data-lucide="map-pin" style="width:11px;height:11px"></i> 서울</span><span><i data-lucide="calendar" style="width:11px;height:11px"></i> 2026-03-30</span></div><div class="card-tags"><span class="tag">기업마당</span><span class="tag purple">지원사업</span><span class="tag green">기술</span></div></div>
+        </div>
+
+        <div class="section-header"><div class="section-title">지금 인기 많은 지원사업 <span class="hot-badge"><i data-lucide="flame" style="width:11px;height:11px"></i> HOT</span></div><a href="chances.html" class="view-all">전체 보기 →</a></div>
+        <div class="pop-cards">
+          <div class="support-card featured">
+  <div class="card-top"><span class="match-badge high">매칭 97%</span><span class="detail-btn">더보기 <i data-lucide="chevron-right" style="width:12px;height:12px"></i></span></div>
+  <div class="card-title">2026년 중소기업 기술개발 지원사업<br>통합공고 — 기술혁신개발 외</div>
+  <div class="card-meta"><span><i data-lucide="map-pin" style="width:11px;height:11px"></i> 전국</span><span><i data-lucide="calendar" style="width:11px;height:11px"></i> 2026-04-30</span></div>
+  <div class="card-tags"><span class="tag">중기부</span><span class="tag green">R&amp;D</span></div>
+</div>
+<div class="support-card featured">
+  <div class="card-top"><span class="match-badge high">매칭 94%</span><span class="detail-btn">더보기 <i data-lucide="chevron-right" style="width:12px;height:12px"></i></span></div>
+  <div class="card-title">2026년 창업성공패키지<br>청년창업사관학교 지역특화형 모집</div>
+  <div class="card-meta"><span><i data-lucide="map-pin" style="width:11px;height:11px"></i> 전국</span><span><i data-lucide="calendar" style="width:11px;height:11px"></i> 2026-03-31</span></div>
+  <div class="card-tags"><span class="tag">창진원</span><span class="tag green">창업</span></div>
+</div>
+<div class="support-card featured">
+  <div class="card-top"><span class="match-badge high">매칭 91%</span><span class="detail-btn">더보기 <i data-lucide="chevron-right" style="width:12px;height:12px"></i></span></div>
+  <div class="card-title">2026년도 중소기업 정책자금<br>융자계획 — 직접·대리대출</div>
+  <div class="card-meta"><span><i data-lucide="map-pin" style="width:11px;height:11px"></i> 전국</span><span><i data-lucide="calendar" style="width:11px;height:11px"></i> 2026-12-31</span></div>
+  <div class="card-tags"><span class="tag">중진공</span><span class="tag purple">정책자금</span></div>
+</div>
+<div class="support-card ">
+  <div class="card-top"><span class="match-badge mid">매칭 88%</span><span class="detail-btn">더보기 <i data-lucide="chevron-right" style="width:12px;height:12px"></i></span></div>
+  <div class="card-title">AI 응용제품 신속 상용화 지원사업<br>참여기업 모집 (보건·의료기기)</div>
+  <div class="card-meta"><span><i data-lucide="map-pin" style="width:11px;height:11px"></i> 전국</span><span><i data-lucide="calendar" style="width:11px;height:11px"></i> 2026-04-15</span></div>
+  <div class="card-tags"><span class="tag">과기부</span><span class="tag orange">AI</span></div>
+</div>
         </div>
       </div>
+
       <div style="display:flex;flex-direction:column;gap:16px">
         <div>
           <div class="section-header"><div class="section-title">마감 임박</div></div>
           <div class="deadline-item"><div class="dday-badge">D-Day</div><div style="font-size:12px;font-weight:600;flex:1">2026년 1차 첨단 GPU 활용 지원 사업</div><div style="font-size:11px;font-weight:700;color:var(--accent)">91%</div></div><div class="deadline-item"><div class="dday-badge">D-1</div><div style="font-size:12px;font-weight:600;flex:1">스마트공장 구축 보급사업 지원 공고</div><div style="font-size:11px;font-weight:700;color:var(--accent)">78%</div></div><div class="deadline-item"><div class="dday-badge">D-2</div><div style="font-size:12px;font-weight:600;flex:1">AI 스타트업 글로벌 진출 지원 프로그램</div><div style="font-size:11px;font-weight:700;color:var(--accent)">85%</div></div><div class="deadline-item"><div class="dday-badge">D-3</div><div style="font-size:12px;font-weight:600;flex:1">2026년 R&D 바우처 지원사업 모집</div><div style="font-size:11px;font-weight:700;color:var(--accent)">72%</div></div><div class="deadline-item"><div class="dday-badge">D-3</div><div style="font-size:12px;font-weight:600;flex:1">중소기업 디지털전환 가속화 지원사업</div><div style="font-size:11px;font-weight:700;color:var(--accent)">68%</div></div>
         </div>
-        
-<div class="panel-box news-slider-box">
+        <div style="background:white;border-radius:12px;padding:18px;box-shadow:var(--shadow);border:1px solid var(--border);overflow:hidden">
   <div style="font-size:11px;font-weight:700;color:var(--text-sub);letter-spacing:.5px;text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;justify-content:space-between">
     <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:3px;height:14px;background:var(--accent);border-radius:2px"></span>최근 지원사업 뉴스</span>
-    <span style="font-size:9px;color:var(--text-light)">🔄 자동갱신</span>
+    <span style="font-size:9px;color:var(--text-light);display:flex;align-items:center;gap:3px"><i data-lucide="refresh-cw" style="width:10px;height:10px"></i> 자동갱신</span>
   </div>
-  <div class="news-slide-wrap" id="newsSlider">
-    <div class="news-slide-track" id="newsTrack">
-      <div class="news-slide-item"><span class="ns-badge">R&amp;D</span><div class="ns-title">2026 AI반도체 활용 기술개발 지원사업 2차 모집 시작</div><div class="ns-meta"><i data-lucide="map-pin" style="width:11px;height:11px"></i> 서울 · 🕐 방금전 · <span style="color:var(--accent);font-weight:700">매칭 91%</span></div></div>
-      <div class="news-slide-item"><span class="ns-badge green">창업</span><div class="ns-title">스타트업 글로벌 진출 패키지 지원사업 접수 마감 D-3</div><div class="ns-meta"><i data-lucide="map-pin" style="width:11px;height:11px"></i> 전국 · 🕐 12분전 · <span style="color:var(--accent);font-weight:700">매칭 85%</span></div></div>
-      <div class="news-slide-item"><span class="ns-badge purple">정책</span><div class="ns-title">중소기업 디지털전환 가속화 지원 예산 3천억 추가 편성</div><div class="ns-meta"><i data-lucide="map-pin" style="width:11px;height:11px"></i> 전국 · 🕐 28분전 · <span style="color:var(--accent);font-weight:700">매칭 78%</span></div></div>
-      <div class="news-slide-item"><span class="ns-badge orange">수출</span><div class="ns-title">K-콘텐츠 수출 지원 플랫폼 구축사업 참여기업 모집</div><div class="ns-meta"><i data-lucide="map-pin" style="width:11px;height:11px"></i> 서울 · 🕐 45분전 · <span style="color:var(--accent);font-weight:700">매칭 72%</span></div></div>
-      <div class="news-slide-item"><span class="ns-badge">R&amp;D</span><div class="ns-title">기후기술 상용화 R&amp;D 바우처 2026년 2차 접수</div><div class="ns-meta"><i data-lucide="map-pin" style="width:11px;height:11px"></i> 경기 · 🕐 1시간전 · <span style="color:var(--accent);font-weight:700">매칭 68%</span></div></div>
-      <div class="news-slide-item"><span class="ns-badge green">창업</span><div class="ns-title">예비창업패키지 2026년 특화분야 모집…AI·바이오 우대</div><div class="ns-meta"><i data-lucide="map-pin" style="width:11px;height:11px"></i> 전국 · 🕐 2시간전 · <span style="color:var(--accent);font-weight:700">매칭 65%</span></div></div>
+  <div style="overflow:hidden;border-radius:8px;height:282px">
+    <div id="newsTrack2" style="display:flex;flex-direction:column;transition:transform .5s ease">
+      <div style="padding:12px 14px;background:var(--bg);border-radius:8px;margin-bottom:4px;min-height:86px;flex-shrink:0"><span style="font-size:10px;font-weight:700;padding:2px 8px;border-radius:10px;background:#E3F2FD;color:#1565C0;display:inline-block;margin-bottom:6px">R&amp;D</span><div style="font-size:12px;font-weight:600;color:var(--text);line-height:1.45;margin-bottom:6px">2026년 중소기업 기술개발 지원사업 통합공고 — 기술혁신개발 외 다수</div><div style="font-size:10px;color:var(--text-sub);display:flex;align-items:center;gap:8px"><i data-lucide="map-pin" style="width:10px;height:10px"></i>전국 <i data-lucide="clock" style="width:10px;height:10px"></i>방금전 <span style="color:var(--accent);font-weight:700">조회 4,821</span></div></div>
+      <div style="padding:12px 14px;background:var(--bg);border-radius:8px;margin-bottom:4px;min-height:86px;flex-shrink:0"><span style="font-size:10px;font-weight:700;padding:2px 8px;border-radius:10px;background:#E8F5E9;color:#2E7D32;display:inline-block;margin-bottom:6px">창업</span><div style="font-size:12px;font-weight:600;color:var(--text);line-height:1.45;margin-bottom:6px">2026년 창업성공패키지(청년창업사관학교) 지역특화형 운영사 모집</div><div style="font-size:10px;color:var(--text-sub);display:flex;align-items:center;gap:8px"><i data-lucide="map-pin" style="width:10px;height:10px"></i>전국 <i data-lucide="clock" style="width:10px;height:10px"></i>1시간전 <span style="color:var(--accent);font-weight:700">조회 3,204</span></div></div>
+      <div style="padding:12px 14px;background:var(--bg);border-radius:8px;margin-bottom:4px;min-height:86px;flex-shrink:0"><span style="font-size:10px;font-weight:700;padding:2px 8px;border-radius:10px;background:#EDE7F6;color:#6A1B9A;display:inline-block;margin-bottom:6px">정책자금</span><div style="font-size:12px;font-weight:600;color:var(--text);line-height:1.45;margin-bottom:6px">2026년도 중소기업 정책자금 융자계획 공고 — 직접대출·대리대출</div><div style="font-size:10px;color:var(--text-sub);display:flex;align-items:center;gap:8px"><i data-lucide="map-pin" style="width:10px;height:10px"></i>전국 <i data-lucide="clock" style="width:10px;height:10px"></i>2시간전 <span style="color:var(--accent);font-weight:700">조회 2,917</span></div></div>
+      <div style="padding:12px 14px;background:var(--bg);border-radius:8px;margin-bottom:4px;min-height:86px;flex-shrink:0"><span style="font-size:10px;font-weight:700;padding:2px 8px;border-radius:10px;background:#FFF3E0;color:#E65100;display:inline-block;margin-bottom:6px">AI</span><div style="font-size:12px;font-weight:600;color:var(--text);line-height:1.45;margin-bottom:6px">AI 응용제품 신속 상용화 지원사업 참여기업 모집 (보건·디지털 의료기기)</div><div style="font-size:10px;color:var(--text-sub);display:flex;align-items:center;gap:8px"><i data-lucide="map-pin" style="width:10px;height:10px"></i>전국 <i data-lucide="clock" style="width:10px;height:10px"></i>3시간전 <span style="color:var(--accent);font-weight:700">조회 2,543</span></div></div>
+      <div style="padding:12px 14px;background:var(--bg);border-radius:8px;margin-bottom:4px;min-height:86px;flex-shrink:0"><span style="font-size:10px;font-weight:700;padding:2px 8px;border-radius:10px;background:#E3F2FD;color:#1565C0;display:inline-block;margin-bottom:6px">소상공인</span><div style="font-size:12px;font-weight:600;color:var(--text);line-height:1.45;margin-bottom:6px">2026년 희망리턴패키지 재기사업화·새출발기금 연계지원 소상공인 모집</div><div style="font-size:10px;color:var(--text-sub);display:flex;align-items:center;gap:8px"><i data-lucide="map-pin" style="width:10px;height:10px"></i>전국 <i data-lucide="clock" style="width:10px;height:10px"></i>5시간전 <span style="color:var(--accent);font-weight:700">조회 1,988</span></div></div>
     </div>
   </div>
-  <div class="ns-dots" id="nsDots"></div>
+  <div id="nsDots2" style="display:flex;justify-content:center;gap:5px;margin-top:10px"></div>
 </div>
-<style>
-.news-slider-box{overflow:hidden}
-.news-slide-wrap{overflow:hidden;border-radius:8px}
-.news-slide-track{display:flex;flex-direction:column;transition:transform .5s ease}
-.news-slide-item{padding:12px 14px;background:var(--bg);border-radius:8px;margin-bottom:2px;min-height:80px;flex-shrink:0}
-.ns-badge{font-size:10px;font-weight:700;padding:2px 8px;border-radius:10px;background:#E3F2FD;color:#1565C0;display:inline-block;margin-bottom:6px}
-.ns-badge.green{background:#E8F5E9;color:#2E7D32}
-.ns-badge.purple{background:#EDE7F6;color:#6A1B9A}
-.ns-badge.orange{background:#FFF3E0;color:#E65100}
-.ns-title{font-size:12px;font-weight:600;color:var(--text);line-height:1.45;margin-bottom:6px}
-.ns-meta{font-size:10px;color:var(--text-sub)}
-.ns-dots{display:flex;justify-content:center;gap:5px;margin-top:10px}
-.ns-dot{width:6px;height:6px;border-radius:50%;background:var(--border);transition:background .3s,width .3s;cursor:pointer}
-.ns-dot.active{background:var(--accent);width:18px;border-radius:3px}
-</style>
+<style>.ns-dot2{width:6px;height:6px;border-radius:50%;background:var(--border);transition:background .3s,width .3s;cursor:pointer;display:inline-block}.ns-dot2.active{background:var(--accent);width:18px;border-radius:3px}</style>
 <script>
 (function(){
-  const track = document.getElementById('newsTrack');
-  const dotsEl = document.getElementById('nsDots');
-  if(!track||!dotsEl) return;
-  const items = track.querySelectorAll('.news-slide-item');
-  const total = items.length;
-  let cur = 0;
-  // Create dots
-  items.forEach((_,i)=>{
-    const d = document.createElement('div');
-    d.className = 'ns-dot' + (i===0?' active':'');
-    d.onclick = ()=>goTo(i);
-    dotsEl.appendChild(d);
-  });
-  function goTo(idx){
-    cur = (idx + total) % total;
-    const h = items[0].offsetHeight + 2;
-    track.style.transform = 'translateY(-' + (cur * h) + 'px)';
-    dotsEl.querySelectorAll('.ns-dot').forEach((d,i)=>d.classList.toggle('active',i===cur));
-  }
-  let timer = setInterval(()=>goTo(cur+1), 3000);
+  const track=document.getElementById('newsTrack2');const dotsEl=document.getElementById('nsDots2');
+  if(!track||!dotsEl)return;
+  const items=track.children;const total=items.length;let cur=0;
+  for(let i=0;i<total;i++){const d=document.createElement('span');d.className='ns-dot2'+(i===0?' active':'');(function(idx){d.onclick=()=>goTo(idx);})(i);dotsEl.appendChild(d);}
+  function goTo(idx){cur=(idx+total)%total;const h=items[0].offsetHeight+4;track.style.transform='translateY(-'+(cur*h)+'px)';Array.from(dotsEl.children).forEach((d,i)=>d.classList.toggle('active',i===cur));}
+  let timer=setInterval(()=>goTo(cur+1),3000);
   track.parentElement.addEventListener('mouseenter',()=>clearInterval(timer));
   track.parentElement.addEventListener('mouseleave',()=>{timer=setInterval(()=>goTo(cur+1),3000);});
 })();
@@ -161,13 +177,18 @@
 <script>
 function openPanel(n){document.getElementById('overlay').classList.add('open');['mypage','keyword'].forEach(x=>document.getElementById('panel-'+x).classList.remove('open'));document.getElementById('panel-'+n).classList.add('open');}
 function closePanel(){document.getElementById('overlay').classList.remove('open');['mypage','keyword'].forEach(x=>document.getElementById('panel-'+x).classList.remove('open'));}
-function setChip(el){el.closest('.filter-chips').querySelectorAll('.chip').forEach(c=>c.classList.remove('active'));el.classList.add('active');}
+function setChip(el){const p=el.closest('.filter-chips');if(p)p.querySelectorAll('.chip').forEach(c=>c.classList.remove('active'));el.classList.add('active');}
+function setTab(el){el.closest('.news-tabs').querySelectorAll('.news-tab').forEach(t=>t.classList.remove('active'));el.classList.add('active');}
+
 (function(){
   const el=document.getElementById('floatingBtns');if(!el)return;
   let drag=false,startY=0,startTop=0;
   el.addEventListener('mousedown',function(e){drag=true;startY=e.clientY;startTop=el.getBoundingClientRect().top;el.style.transition='none';e.preventDefault();});
   document.addEventListener('mousemove',function(e){if(!drag)return;const t=Math.max(20,Math.min(window.innerHeight-el.offsetHeight-20,startTop+(e.clientY-startY)));el.style.top=t+'px';el.style.transform='none';});
   document.addEventListener('mouseup',function(){if(drag){drag=false;el.style.transition='';}});
+  el.addEventListener('touchstart',function(e){drag=true;startY=e.touches[0].clientY;startTop=el.getBoundingClientRect().top;el.style.transition='none';},{passive:true});
+  document.addEventListener('touchmove',function(e){if(!drag)return;const t=Math.max(20,Math.min(window.innerHeight-el.offsetHeight-20,startTop+(e.touches[0].clientY-startY)));el.style.top=t+'px';el.style.transform='none';},{passive:true});
+  document.addEventListener('touchend',function(){drag=false;el.style.transition='';});
 })();
 </script>
 <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>

@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=1440"><title>지원사업 | AIFORUS CLT+</title><link rel="stylesheet" href="css/common.css">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1440">
+<title>지원사업 | AIFORUS CLT+</title>
+<link rel="stylesheet" href="css/common.css">
 <style>
+.icon-svg{width:16px;height:16px}
+
 .chances-layout{display:grid;grid-template-columns:1fr 260px;gap:20px}
 .chances-left{display:flex;flex-direction:column;gap:16px}
 .right-panel{display:flex;flex-direction:column;gap:16px}
@@ -22,17 +28,25 @@
 .sort-sel{font-size:12px;font-weight:600;color:var(--primary);background:white;border:1.5px solid var(--border);border-radius:8px;padding:6px 12px;cursor:pointer}
 .card-placeholder{background:linear-gradient(135deg,#F8FAFF,#F0F5FF);border:1.5px dashed var(--border);border-radius:var(--radius);height:180px;display:flex;align-items:center;justify-content:center;color:var(--text-light);font-size:18px}
 .kw-chips-row{display:flex;flex-wrap:wrap;gap:7px}
+
 </style>
 </head>
-<body>
-<aside class="sidebar">
+<body><aside class="sidebar">
   <div class="sidebar-logo">
+<<<<<<< HEAD
+    <img src="assets/logo_aiforus-clt.png" class="logo-img" alt="AIFORUS CLT+">
+=======
     <img src="assets/logo_aiforus-clt.png" class="logo-img" alt="AIFORUS">
+>>>>>>> 7192d57e8521adc2f18751e774f3e69ee1e6aca2
     <div class="user-info">
       <div class="user-avatar"><i data-lucide="circle-user" style="width:18px;height:18px;color:var(--accent)"></i></div>
       <div><div class="user-name">check_com</div><div class="user-company">한국인공지능검증원</div></div>
     </div>
   </div>
+<<<<<<< HEAD
+  <nav class="sidebar-menu"><div class="menu-label">메뉴</div><a href="index.html" class="menu-item "><i data-lucide="layout-dashboard" class="icon-svg"></i>대시보드</a><a href="chances.html" class="menu-item active"><i data-lucide="target" class="icon-svg"></i>지원사업</a><a href="news.html" class="menu-item "><i data-lucide="newspaper" class="icon-svg"></i>지역·업종 뉴스</a></nav>
+  <div class="sidebar-bottom"><a href="https://aicerti.com" target="_blank"><img src="assets/logo_kaic_grayscale.png" class="kaic-logo-img-gray" alt="KAIC"></a></div>
+=======
   <nav class="sidebar-menu"><div class="menu-label">메뉴</div><a href="index.html" class="menu-item "><i data-lucide="layout-dashboard" class="icon-svg"></i>대시보드</a>
 <a href="chances.html" class="menu-item active"><i data-lucide="target" class="icon-svg"></i>지원사업</a>
 <a href="news.html" class="menu-item "><i data-lucide="newspaper" class="icon-svg"></i>지역·업종 뉴스</a>
@@ -42,11 +56,12 @@
     <img src="assets/logo_kaic_grayscale.png" class="kaic-logo-img-gray" alt="KAIC">
   </a>
 </div>
+>>>>>>> 7192d57e8521adc2f18751e774f3e69ee1e6aca2
 </aside>
 <div class="main">
   <div class="topbar">
     <div class="page-title">지원사업 <span>· 맞춤 지원사업 탐색</span></div>
-    <div class="search-bar" style="margin-left:20px"><span><i data-lucide="search" style="width:15px;height:15px;color:var(--text-light)"></i></span><input type="text" placeholder="지원사업, 뉴스 검색..."></div>
+    <div class="search-bar" style="margin-left:20px"><i data-lucide="search" style="width:15px;height:15px;color:var(--text-light)"></i><input type="text" placeholder="지원사업, 뉴스 검색..."></div>
   </div>
   <div class="content">
     <div class="chances-layout">
@@ -57,16 +72,16 @@
           <div class="filter-row"><div class="filter-label">시/군/구</div><div class="filter-chips"><div class="chip sm" onclick="setChip(this)">ㄱ</div><div class="chip sm" onclick="setChip(this)">ㄴ</div><div class="chip sm" onclick="setChip(this)">ㄷ</div><div class="chip sm" onclick="setChip(this)">ㄹ</div><div class="chip sm" onclick="setChip(this)">ㅁ</div><div class="chip sm" onclick="setChip(this)">ㅂ</div><div class="chip sm" onclick="setChip(this)">ㅅ</div><div class="chip sm" onclick="setChip(this)">ㅇ</div><div class="chip sm" onclick="setChip(this)">ㅈ</div><div class="chip sm" onclick="setChip(this)">ㅊ</div><div class="chip sm" onclick="setChip(this)">ㅌ~ㅎ</div></div></div>
         </div>
         <div class="keyword-section">
-          <div class="keyword-header"><div class="keyword-title">🏷️ 내 추천 키워드</div><div class="keyword-count">6</div><div style="margin-left:auto;font-size:11px;color:var(--primary);cursor:pointer;font-weight:600" onclick="openPanel('keyword')">관리 →</div></div>
+          <div class="keyword-header"><div class="keyword-title"><i data-lucide="tag" style="width:13px;height:13px"></i> 내 추천 키워드</div><div class="keyword-count">6</div><div style="margin-left:auto;font-size:11px;color:var(--primary);cursor:pointer;font-weight:600" onclick="openPanel('keyword')">관리 →</div></div>
           <div class="kw-chips-row"><div class="kw-chip">#AI반도체 <span class="x">✕</span></div><div class="kw-chip">#수출 <span class="x">✕</span></div><div class="kw-chip">#R&amp;D <span class="x">✕</span></div><div class="kw-chip">#GPU <span class="x">✕</span></div><div class="kw-chip">#창업지원 <span class="x">✕</span></div><div class="kw-chip">#기후변화 <span class="x">✕</span></div></div>
         </div>
         <div>
           <div class="results-hdr"><div class="results-count">총 <em>128</em>건의 지원사업</div><div class="sort-sel">매칭순 ▾</div></div>
           <div class="cards-grid">
-            <div class="support-card featured"><div class="card-top"><span class="match-badge high">매칭 91%</span><span class="detail-btn">더보기 ▶</span></div><div class="card-title">2026년 1차 첨단 GPU 활용<br>지원 사업 사용자 모집</div><div class="card-meta"><span><i data-lucide="map-pin" style="width:11px;height:11px"></i> 서울</span><span class="dday"><i data-lucide="calendar" style="width:11px;height:11px"></i> 2026-03-30 D-Day</span></div><div class="card-tags"><span class="tag">기업마당</span><span class="tag green">기술</span></div></div>
-            <div class="support-card"><div class="card-top"><span class="match-badge mid">매칭 69%</span><span class="detail-btn">더보기 ▶</span></div><div class="card-title">2026년 2차 부산국제항공회의엑스포<br>참가 지원 공고</div><div class="card-meta"><span><i data-lucide="map-pin" style="width:11px;height:11px"></i> 서울</span><span class="dday"><i data-lucide="calendar" style="width:11px;height:11px"></i> 2026-03-30 D-Day</span></div><div class="card-tags"><span class="tag">기업마당</span><span class="tag purple">지원사업</span><span class="tag orange">수출</span></div></div>
-            <div class="support-card"><div class="card-top"><span class="match-badge mid">매칭 58%</span><span class="detail-btn">더보기 ▶</span></div><div class="card-title">2026년 AI반도체를 활용한<br>K-클라우드 기술개발 사업 공고</div><div class="card-meta"><span><i data-lucide="map-pin" style="width:11px;height:11px"></i> 서울</span><span class="dday"><i data-lucide="calendar" style="width:11px;height:11px"></i> 2026-03-30 D-Day</span></div><div class="card-tags"><span class="tag">기업마당</span><span class="tag purple">지원사업</span><span class="tag green">기술</span></div></div>
-            <div class="support-card"><div class="card-top"><span class="match-badge low">매칭 47%</span><span class="detail-btn">더보기 ▶</span></div><div class="card-title">저탄소·기후 변화 대응을 위한<br>지속성장(R&amp;D) 사업 공고</div><div class="card-meta"><span><i data-lucide="map-pin" style="width:11px;height:11px"></i> 서울</span><span><i data-lucide="calendar" style="width:11px;height:11px"></i> 2026-03-30</span></div><div class="card-tags"><span class="tag">기업마당</span><span class="tag purple">지원사업</span><span class="tag green">기술</span></div></div>
+            <div class="support-card featured"><div class="card-top"><span class="match-badge high">매칭 91%</span><span class="detail-btn">더보기 <i data-lucide="chevron-right" style="width:12px;height:12px"></i></span></div><div class="card-title">2026년 1차 첨단 GPU 활용<br>지원 사업 사용자 모집</div><div class="card-meta"><span><i data-lucide="map-pin" style="width:11px;height:11px"></i> 서울</span><span class="dday"><i data-lucide="calendar" style="width:11px;height:11px"></i> 2026-03-30 D-Day</span></div><div class="card-tags"><span class="tag">기업마당</span><span class="tag green">기술</span></div></div>
+            <div class="support-card"><div class="card-top"><span class="match-badge mid">매칭 69%</span><span class="detail-btn">더보기 <i data-lucide="chevron-right" style="width:12px;height:12px"></i></span></div><div class="card-title">2026년 2차 부산국제항공회의엑스포<br>참가 지원 공고</div><div class="card-meta"><span><i data-lucide="map-pin" style="width:11px;height:11px"></i> 서울</span><span class="dday"><i data-lucide="calendar" style="width:11px;height:11px"></i> 2026-03-30 D-Day</span></div><div class="card-tags"><span class="tag">기업마당</span><span class="tag purple">지원사업</span><span class="tag orange">수출</span></div></div>
+            <div class="support-card"><div class="card-top"><span class="match-badge mid">매칭 58%</span><span class="detail-btn">더보기 <i data-lucide="chevron-right" style="width:12px;height:12px"></i></span></div><div class="card-title">2026년 AI반도체를 활용한<br>K-클라우드 기술개발 사업 공고</div><div class="card-meta"><span><i data-lucide="map-pin" style="width:11px;height:11px"></i> 서울</span><span class="dday"><i data-lucide="calendar" style="width:11px;height:11px"></i> 2026-03-30 D-Day</span></div><div class="card-tags"><span class="tag">기업마당</span><span class="tag purple">지원사업</span><span class="tag green">기술</span></div></div>
+            <div class="support-card"><div class="card-top"><span class="match-badge low">매칭 47%</span><span class="detail-btn">더보기 <i data-lucide="chevron-right" style="width:12px;height:12px"></i></span></div><div class="card-title">저탄소·기후 변화 대응을 위한<br>지속성장(R&amp;D) 사업 공고</div><div class="card-meta"><span><i data-lucide="map-pin" style="width:11px;height:11px"></i> 서울</span><span><i data-lucide="calendar" style="width:11px;height:11px"></i> 2026-03-30</span></div><div class="card-tags"><span class="tag">기업마당</span><span class="tag purple">지원사업</span><span class="tag green">기술</span></div></div>
             <div class="card-placeholder">· · ·</div><div class="card-placeholder">· · ·</div><div class="card-placeholder">· · ·</div><div class="card-placeholder">· · ·</div>
           </div>
         </div>
@@ -82,62 +97,28 @@
           <div class="region-item"><div class="rdot"></div><div style="flex:1">성남시</div><div class="rbadge">특례</div></div>
           <div class="region-item"><div class="rdot"></div><div style="flex:1">화성시</div><div class="rbadge">특례</div></div>
           <div style="margin-top:12px;border-top:1px solid var(--border);padding-top:12px">
-            <div style="display:flex;align-items:center;gap:6px;font-size:11px;font-weight:700;color:var(--text-sub);margin-bottom:10px"><span style="color:#FFB300;font-size:14px">★</span> 지원사업 활발 Top 3</div>
+            <div style="display:flex;align-items:center;gap:6px;font-size:11px;font-weight:700;color:var(--text-sub);margin-bottom:10px"><i data-lucide="star" style="width:14px;height:14px;color:#FFB300;fill:#FFB300"></i> 지원사업 활발 Top 3</div>
             <div class="top3-item"><div class="rank">1</div>수원시<div style="margin-left:auto;font-size:10px;color:var(--text-light)">38건</div></div>
             <div class="top3-item"><div class="rank">2</div>용인시<div style="margin-left:auto;font-size:10px;color:var(--text-light)">31건</div></div>
             <div class="top3-item"><div class="rank">3</div>성남시<div style="margin-left:auto;font-size:10px;color:var(--text-light)">27건</div></div>
           </div>
         </div>
-        <div style="background:white;border-radius:12px;padding:18px;box-shadow:var(--shadow);border:1px solid var(--border);overflow:hidden">
-  <div style="font-size:11px;font-weight:700;color:var(--text-sub);letter-spacing:.5px;text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;justify-content:space-between">
-    <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:3px;height:14px;background:var(--accent);border-radius:2px"></span>최근 지원사업 뉴스</span>
-    <span style="font-size:9px;color:var(--text-light)">🔄 자동갱신</span>
-  </div>
-  <div style="overflow:hidden;border-radius:8px;height:282px">
-    <div id="newsTrack2" style="display:flex;flex-direction:column;transition:transform .5s ease">
-      <div style="padding:12px 14px;background:var(--bg);border-radius:8px;margin-bottom:4px;min-height:86px;flex-shrink:0"><span style="font-size:10px;font-weight:700;padding:2px 8px;border-radius:10px;background:#E3F2FD;color:#1565C0;display:inline-block;margin-bottom:6px">R&amp;D</span><div style="font-size:12px;font-weight:600;color:var(--text);line-height:1.45;margin-bottom:6px">2026 AI반도체 활용 기술개발 지원사업 2차 모집 시작</div><div style="font-size:10px;color:var(--text-sub)"><i data-lucide="map-pin" style="width:11px;height:11px"></i> 서울 · 🕐 방금전 · <span style="color:var(--accent);font-weight:700">매칭 91%</span></div></div>
-      <div style="padding:12px 14px;background:var(--bg);border-radius:8px;margin-bottom:4px;min-height:86px;flex-shrink:0"><span style="font-size:10px;font-weight:700;padding:2px 8px;border-radius:10px;background:#E8F5E9;color:#2E7D32;display:inline-block;margin-bottom:6px">창업</span><div style="font-size:12px;font-weight:600;color:var(--text);line-height:1.45;margin-bottom:6px">스타트업 글로벌 진출 패키지 지원사업 접수 마감 D-3</div><div style="font-size:10px;color:var(--text-sub)"><i data-lucide="map-pin" style="width:11px;height:11px"></i> 전국 · 🕐 12분전 · <span style="color:var(--accent);font-weight:700">매칭 85%</span></div></div>
-      <div style="padding:12px 14px;background:var(--bg);border-radius:8px;margin-bottom:4px;min-height:86px;flex-shrink:0"><span style="font-size:10px;font-weight:700;padding:2px 8px;border-radius:10px;background:#EDE7F6;color:#6A1B9A;display:inline-block;margin-bottom:6px">정책</span><div style="font-size:12px;font-weight:600;color:var(--text);line-height:1.45;margin-bottom:6px">중소기업 디지털전환 가속화 지원 예산 3천억 추가 편성</div><div style="font-size:10px;color:var(--text-sub)"><i data-lucide="map-pin" style="width:11px;height:11px"></i> 전국 · 🕐 28분전 · <span style="color:var(--accent);font-weight:700">매칭 78%</span></div></div>
-      <div style="padding:12px 14px;background:var(--bg);border-radius:8px;margin-bottom:4px;min-height:86px;flex-shrink:0"><span style="font-size:10px;font-weight:700;padding:2px 8px;border-radius:10px;background:#FFF3E0;color:#E65100;display:inline-block;margin-bottom:6px">수출</span><div style="font-size:12px;font-weight:600;color:var(--text);line-height:1.45;margin-bottom:6px">K-콘텐츠 수출 지원 플랫폼 구축사업 참여기업 모집</div><div style="font-size:10px;color:var(--text-sub)"><i data-lucide="map-pin" style="width:11px;height:11px"></i> 서울 · 🕐 45분전 · <span style="color:var(--accent);font-weight:700">매칭 72%</span></div></div>
-      <div style="padding:12px 14px;background:var(--bg);border-radius:8px;margin-bottom:4px;min-height:86px;flex-shrink:0"><span style="font-size:10px;font-weight:700;padding:2px 8px;border-radius:10px;background:#E3F2FD;color:#1565C0;display:inline-block;margin-bottom:6px">R&amp;D</span><div style="font-size:12px;font-weight:600;color:var(--text);line-height:1.45;margin-bottom:6px">기후기술 상용화 R&amp;D 바우처 2026년 2차 접수 시작</div><div style="font-size:10px;color:var(--text-sub)"><i data-lucide="map-pin" style="width:11px;height:11px"></i> 경기 · 🕐 1시간전 · <span style="color:var(--accent);font-weight:700">매칭 68%</span></div></div>
-    </div>
-  </div>
-  <div id="nsDots2" style="display:flex;justify-content:center;gap:5px;margin-top:10px"></div>
-</div>
-<style>
-.ns-dot2{width:6px;height:6px;border-radius:50%;background:var(--border);transition:background .3s,width .3s;cursor:pointer;display:inline-block}
-.ns-dot2.active{background:var(--accent);width:18px;border-radius:3px}
-</style>
-<script>
-(function(){
-  const track=document.getElementById('newsTrack2');
-  const dotsEl=document.getElementById('nsDots2');
-  if(!track||!dotsEl)return;
-  const items=track.children;
-  const total=items.length;
-  let cur=0;
-  for(let i=0;i<total;i++){const d=document.createElement('span');d.className='ns-dot2'+(i===0?' active':'');(function(idx){d.onclick=()=>goTo(idx);})(i);dotsEl.appendChild(d);}
-  function goTo(idx){cur=(idx+total)%total;const h=items[0].offsetHeight+4;track.style.transform='translateY(-'+(cur*h)+'px)';Array.from(dotsEl.children).forEach((d,i)=>d.classList.toggle('active',i===cur));}
-  let timer=setInterval(()=>goTo(cur+1),3000);
-  track.parentElement.addEventListener('mouseenter',()=>clearInterval(timer));
-  track.parentElement.addEventListener('mouseleave',()=>{timer=setInterval(()=>goTo(cur+1),3000);});
-})();
-</script>
       </div>
     </div>
   </div>
 </div>
+
 <div class="floating-btns" id="floatingBtns">
-  <div class="float-btn" onclick="openPanel('mypage')"><div class="float-icon">👤</div><div class="float-label">마이</div></div>
-  <div class="float-btn" onclick="openPanel('keyword')"><div class="float-icon">🏷️</div><div class="float-label">키워드</div></div>
-  <div class="float-btn"><div class="float-icon">📌</div><div class="float-label">저장</div></div>
+  <div class="float-btn" onclick="openPanel('mypage')"><i data-lucide="user" style="width:18px;height:18px"></i><div class="float-label">마이</div></div>
+  <div class="float-btn" onclick="openPanel('keyword')"><i data-lucide="tag" style="width:18px;height:18px"></i><div class="float-label">키워드</div></div>
+  <div class="float-btn"><i data-lucide="bookmark" style="width:18px;height:18px"></i><div class="float-label">저장</div></div>
 </div>
 <div class="slide-overlay" id="overlay" onclick="closePanel()"></div>
 <div class="slide-panel" id="panel-mypage">
-  <div class="panel-header"><div><div class="panel-header-title">마이 페이지</div><div class="panel-header-sub">프로필 및 알림 설정</div></div><button class="close-btn" onclick="closePanel()">✕</button></div>
+  <div class="panel-header"><div><div class="panel-header-title">마이 페이지</div><div class="panel-header-sub">프로필 및 알림 설정</div></div><button class="close-btn" onclick="closePanel()"><i data-lucide="x" style="width:16px;height:16px"></i></button></div>
   <div class="panel-body">
-    <div class="ob-banner"><span style="font-size:20px">🚀</span><div style="flex:1"><div class="ob-title">예비창업자 온보딩</div><div class="ob-desc">사업자등록번호를 입력하시면 맞춤 지원사업을 추천해 드려요.</div></div><div class="ob-btn">바로가기</div></div>
-    <div class="mypage-avatar"><div class="avatar-circle">🐱</div><div class="mypage-name">check_com</div><div class="mypage-email">check@company.com</div></div>
+    <div class="ob-banner"><i data-lucide="rocket" style="width:20px;height:20px;color:var(--primary)"></i><div style="flex:1"><div class="ob-title">예비창업자 온보딩</div><div class="ob-desc">사업자등록번호를 입력하시면 맞춤 지원사업을 추천해 드려요.</div></div><div class="ob-btn">바로가기</div></div>
+    <div class="mypage-avatar"><div class="avatar-circle"><i data-lucide="user-circle" style="width:36px;height:36px;color:var(--primary)"></i></div><div class="mypage-name">check_com</div><div class="mypage-email">check@company.com</div></div>
     <div class="field-group">
       <div class="field-item"><div class="field-content"><div class="field-lbl">이름</div><div class="field-val">chck_com</div></div><div class="edit-btn">수정</div></div>
       <div class="field-item"><div class="field-content"><div class="field-lbl">이메일</div><div class="field-val">check@company.com</div></div><div class="edit-btn">수정</div></div>
@@ -145,7 +126,7 @@
       <div class="field-item"><div class="field-content"><div class="field-lbl">관심지역</div><div class="field-val">서울, 경기</div></div><div class="edit-btn">수정</div></div>
       <div class="field-item"><div class="field-content"><div class="field-lbl">업종</div><div class="field-val">IT / 소프트웨어</div></div><div class="edit-btn">수정</div></div>
     </div>
-    <div class="alarm-section-title">⚙️ 알림 설정</div>
+    <div class="alarm-section-title"><i data-lucide="settings" style="width:14px;height:14px"></i> 알림 설정</div>
     <div class="toggle-row"><div class="toggle-info"><div class="toggle-label">이메일 알림</div><div class="toggle-desc">새로운 지원사업 이메일로 받기</div></div><div class="toggle on" onclick="this.classList.toggle('on')"></div></div>
     <div class="toggle-row"><div class="toggle-info"><div class="toggle-label">신규 지원사업 알림</div><div class="toggle-desc">추천 지원사업 업데이트 알림</div></div><div class="toggle on" onclick="this.classList.toggle('on')"></div></div>
     <div class="toggle-row"><div class="toggle-info"><div class="toggle-label">마감 D-3 알림</div><div class="toggle-desc">지원 마감 3일전 알림</div></div><div class="toggle" onclick="this.classList.toggle('on')"></div></div>
@@ -153,7 +134,7 @@
   </div>
 </div>
 <div class="slide-panel" id="panel-keyword">
-  <div class="panel-header"><div><div class="panel-header-title">키워드 관리</div><div class="panel-header-sub">키워드를 설정하면 맞춤 지원사업을 추천해 드려요.</div></div><button class="close-btn" onclick="closePanel()">✕</button></div>
+  <div class="panel-header"><div><div class="panel-header-title">키워드 관리</div><div class="panel-header-sub">키워드를 설정하면 맞춤 지원사업을 추천해 드려요.</div></div><button class="close-btn" onclick="closePanel()"><i data-lucide="x" style="width:16px;height:16px"></i></button></div>
   <div class="panel-body">
     <div class="kw-panel-stats"><div class="kw-panel-count">128건</div><div class="kw-panel-label">현재 지원사업 매칭중</div></div>
     <div class="kw-group"><div class="kw-group-title">현재 추천 키워드 <span class="kw-count-badge">6</span></div><div class="kw-chips-wrap"><div class="kw-tag current">#AI반도체 ✕</div><div class="kw-tag current">#수출 ✕</div><div class="kw-tag current">#R&amp;D ✕</div><div class="kw-tag current">#GPU ✕</div><div class="kw-tag current">#창업지원 ✕</div><div class="kw-tag current">#기후변화 ✕</div></div></div>
@@ -166,15 +147,17 @@
 <script>
 function openPanel(n){document.getElementById('overlay').classList.add('open');['mypage','keyword'].forEach(x=>document.getElementById('panel-'+x).classList.remove('open'));document.getElementById('panel-'+n).classList.add('open');}
 function closePanel(){document.getElementById('overlay').classList.remove('open');['mypage','keyword'].forEach(x=>document.getElementById('panel-'+x).classList.remove('open'));}
-function setChip(el){el.closest('.filter-chips').querySelectorAll('.chip').forEach(c=>c.classList.remove('active'));el.classList.add('active');}
+function setChip(el){const p=el.closest('.filter-chips');if(p)p.querySelectorAll('.chip').forEach(c=>c.classList.remove('active'));el.classList.add('active');}
+function setTab(el){el.closest('.news-tabs').querySelectorAll('.news-tab').forEach(t=>t.classList.remove('active'));el.classList.add('active');}
+
 (function(){
   const el=document.getElementById('floatingBtns');if(!el)return;
   let drag=false,startY=0,startTop=0;
   el.addEventListener('mousedown',function(e){drag=true;startY=e.clientY;startTop=el.getBoundingClientRect().top;el.style.transition='none';e.preventDefault();});
-  document.addEventListener('mousemove',function(e){if(!drag)return;const dy=e.clientY-startY;const t=Math.max(20,Math.min(window.innerHeight-el.offsetHeight-20,startTop+dy));el.style.top=t+'px';el.style.transform='none';});
+  document.addEventListener('mousemove',function(e){if(!drag)return;const t=Math.max(20,Math.min(window.innerHeight-el.offsetHeight-20,startTop+(e.clientY-startY)));el.style.top=t+'px';el.style.transform='none';});
   document.addEventListener('mouseup',function(){if(drag){drag=false;el.style.transition='';}});
   el.addEventListener('touchstart',function(e){drag=true;startY=e.touches[0].clientY;startTop=el.getBoundingClientRect().top;el.style.transition='none';},{passive:true});
-  document.addEventListener('touchmove',function(e){if(!drag)return;const dy=e.touches[0].clientY-startY;const t=Math.max(20,Math.min(window.innerHeight-el.offsetHeight-20,startTop+dy));el.style.top=t+'px';el.style.transform='none';},{passive:true});
+  document.addEventListener('touchmove',function(e){if(!drag)return;const t=Math.max(20,Math.min(window.innerHeight-el.offsetHeight-20,startTop+(e.touches[0].clientY-startY)));el.style.top=t+'px';el.style.transform='none';},{passive:true});
   document.addEventListener('touchend',function(){drag=false;el.style.transition='';});
 })();
 </script>

@@ -57,10 +57,8 @@ body {
 }
 
 .kaic-logo-img-gray {
-  width: 80px;
-  max-width: 80px;
-  max-height: 28px;
-  object-fit: contain;
+  max-width: 80%;
+  height: auto;
   opacity: 0.5;
   display: block;
   margin: 0 auto;

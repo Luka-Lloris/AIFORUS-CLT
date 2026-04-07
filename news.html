@@ -230,6 +230,15 @@ function setChip(el){el.closest('.filter-chips').querySelectorAll('.chip').forEa
 <script>
 function setTab(el){el.closest('.news-tabs').querySelectorAll('.news-tab').forEach(t=>t.classList.remove('active'));el.classList.add('active');}
 </script>
+<script>
+(function(){
+  const el=document.getElementById('floatingBtns');if(!el)return;
+  let drag=false,startY=0,startTop=0;
+  el.addEventListener('mousedown',function(e){drag=true;startY=e.clientY;startTop=el.getBoundingClientRect().top;el.style.transition='none';e.preventDefault();});
+  document.addEventListener('mousemove',function(e){if(!drag)return;const t=Math.max(20,Math.min(window.innerHeight-el.offsetHeight-20,startTop+(e.clientY-startY)));el.style.top=t+'px';el.style.transform='none';});
+  document.addEventListener('mouseup',function(){if(drag){drag=false;el.style.transition='';}});
+})();
+</script>
 <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 <script>document.addEventListener("DOMContentLoaded",()=>lucide.createIcons());</script>
 </body></html>

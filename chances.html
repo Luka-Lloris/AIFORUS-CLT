@@ -95,7 +95,7 @@
 <div class="floating-btns" id="floatingBtns">
   <div class="float-btn" onclick="openPanel('mypage')"><i data-lucide="user" style="width:18px;height:18px"></i><div class="float-label">마이</div></div>
   <div class="float-btn" onclick="openPanel('keyword')"><i data-lucide="tag" style="width:18px;height:18px"></i><div class="float-label">키워드</div></div>
-  <div class="float-btn"><i data-lucide="bookmark" style="width:18px;height:18px"></i><div class="float-label">저장</div></div>
+  <div class="float-btn"><i data-lucide="bookmark" style="width:18px;height:18px"></i><div class="float-label">저장 onclick="openPanel('scraps')"></div>
 </div>
 <div class="slide-overlay" id="overlay" onclick="closePanel()"></div>
 <div class="slide-panel" id="panel-mypage">
@@ -129,8 +129,8 @@
   </div>
 </div>
 <script>
-function openPanel(n){document.getElementById('overlay').classList.add('open');['mypage','keyword'].forEach(x=>document.getElementById('panel-'+x).classList.remove('open'));document.getElementById('panel-'+n).classList.add('open');}
-function closePanel(){document.getElementById('overlay').classList.remove('open');['mypage','keyword'].forEach(x=>document.getElementById('panel-'+x).classList.remove('open'));}
+function openPanel(n){document.getElementById('overlay').classList.add('open');['mypage','keyword','scraps'].forEach(x=>document.getElementById('panel-'+x).classList.remove('open'));document.getElementById('panel-'+n).classList.add('open');}
+function closePanel(){document.getElementById('overlay').classList.remove('open');['mypage','keyword','scraps'].forEach(x=>document.getElementById('panel-'+x).classList.remove('open'));}
 function setChip(el){const p=el.closest('.filter-chips');if(p)p.querySelectorAll('.chip').forEach(c=>c.classList.remove('active'));el.classList.add('active');}
 function setTab(el){el.closest('.news-tabs').querySelectorAll('.news-tab').forEach(t=>t.classList.remove('active'));el.classList.add('active');}
 
@@ -147,4 +147,120 @@ function setTab(el){el.closest('.news-tabs').querySelectorAll('.news-tab').forEa
 </script>
 <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 <script>document.addEventListener("DOMContentLoaded",()=>lucide.createIcons());</script>
+<div class="slide-panel" id="panel-scraps">
+  <div class="panel-header">
+    <div>
+      <div class="panel-header-title">저장 목록</div>
+      <div class="panel-header-sub">스크랩한 지원사업 14건</div>
+    </div>
+    <button class="close-btn" onclick="closePanel()"><i data-lucide="x" style="width:16px;height:16px"></i></button>
+  </div>
+  <div class="panel-body" style="padding:16px 20px">
+    <div style="display:flex;flex-direction:column;gap:12px">
+
+      <div style="background:var(--bg);border-radius:10px;padding:14px 16px;border:1.5px solid var(--border)">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px">
+          <span style="font-size:11px;font-weight:700;padding:3px 8px;border-radius:10px;background:linear-gradient(90deg,#00AEEF,#1565C0);color:white">매칭 91%</span>
+          <i data-lucide="bookmark" style="width:14px;height:14px;color:var(--accent);fill:var(--accent)"></i>
+        </div>
+        <div style="font-size:13px;font-weight:700;color:var(--text);line-height:1.45;margin-bottom:8px">2026년 1차 첨단 GPU 활용 지원 사업 사용자 모집</div>
+        <div style="font-size:11px;color:var(--text-sub);display:flex;align-items:center;gap:10px;margin-bottom:10px">
+          <span style="display:flex;align-items:center;gap:3px"><i data-lucide="map-pin" style="width:10px;height:10px"></i> 서울</span>
+          <span style="display:flex;align-items:center;gap:3px;color:var(--danger);font-weight:700"><i data-lucide="calendar" style="width:10px;height:10px"></i> D-Day</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:5px">
+          <span style="font-size:10px;font-weight:600;padding:2px 8px;border-radius:6px;background:#E3F2FD;color:#1565C0">#GPU</span>
+          <span style="font-size:10px;font-weight:600;padding:2px 8px;border-radius:6px;background:#E3F2FD;color:#1565C0">#AI반도체</span>
+          <span style="font-size:10px;font-weight:600;padding:2px 8px;border-radius:6px;background:#E8F5E9;color:#2E7D32">#R&amp;D</span>
+        </div>
+      </div>
+
+      <div style="background:var(--bg);border-radius:10px;padding:14px 16px;border:1.5px solid var(--border)">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px">
+          <span style="font-size:11px;font-weight:700;padding:3px 8px;border-radius:10px;background:#1976D2;color:white">매칭 85%</span>
+          <i data-lucide="bookmark" style="width:14px;height:14px;color:var(--accent);fill:var(--accent)"></i>
+        </div>
+        <div style="font-size:13px;font-weight:700;color:var(--text);line-height:1.45;margin-bottom:8px">스타트업 글로벌 진출 패키지 지원사업 접수</div>
+        <div style="font-size:11px;color:var(--text-sub);display:flex;align-items:center;gap:10px;margin-bottom:10px">
+          <span style="display:flex;align-items:center;gap:3px"><i data-lucide="map-pin" style="width:10px;height:10px"></i> 전국</span>
+          <span style="display:flex;align-items:center;gap:3px;color:var(--danger);font-weight:700"><i data-lucide="calendar" style="width:10px;height:10px"></i> D-2</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:5px">
+          <span style="font-size:10px;font-weight:600;padding:2px 8px;border-radius:6px;background:#E3F2FD;color:#1565C0">#수출</span>
+          <span style="font-size:10px;font-weight:600;padding:2px 8px;border-radius:6px;background:#E3F2FD;color:#1565C0">#창업지원</span>
+          <span style="font-size:10px;font-weight:600;padding:2px 8px;border-radius:6px;background:#EDE7F6;color:#6A1B9A">#글로벌진출</span>
+        </div>
+      </div>
+
+      <div style="background:var(--bg);border-radius:10px;padding:14px 16px;border:1.5px solid var(--border)">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px">
+          <span style="font-size:11px;font-weight:700;padding:3px 8px;border-radius:10px;background:#1976D2;color:white">매칭 78%</span>
+          <i data-lucide="bookmark" style="width:14px;height:14px;color:var(--accent);fill:var(--accent)"></i>
+        </div>
+        <div style="font-size:13px;font-weight:700;color:var(--text);line-height:1.45;margin-bottom:8px">2026년 중소기업 기술개발 지원사업 통합공고</div>
+        <div style="font-size:11px;color:var(--text-sub);display:flex;align-items:center;gap:10px;margin-bottom:10px">
+          <span style="display:flex;align-items:center;gap:3px"><i data-lucide="map-pin" style="width:10px;height:10px"></i> 전국</span>
+          <span style="display:flex;align-items:center;gap:3px"><i data-lucide="calendar" style="width:10px;height:10px"></i> ~2026-04-30</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:5px">
+          <span style="font-size:10px;font-weight:600;padding:2px 8px;border-radius:6px;background:#E8F5E9;color:#2E7D32">#R&amp;D</span>
+          <span style="font-size:10px;font-weight:600;padding:2px 8px;border-radius:6px;background:#E3F2FD;color:#1565C0">#기술개발</span>
+          <span style="font-size:10px;font-weight:600;padding:2px 8px;border-radius:6px;background:#E3F2FD;color:#1565C0">#AI반도체</span>
+        </div>
+      </div>
+
+      <div style="background:var(--bg);border-radius:10px;padding:14px 16px;border:1.5px solid var(--border)">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px">
+          <span style="font-size:11px;font-weight:700;padding:3px 8px;border-radius:10px;background:#1976D2;color:white">매칭 72%</span>
+          <i data-lucide="bookmark" style="width:14px;height:14px;color:var(--accent);fill:var(--accent)"></i>
+        </div>
+        <div style="font-size:13px;font-weight:700;color:var(--text);line-height:1.45;margin-bottom:8px">2026년 R&amp;D 바우처 지원사업 모집공고</div>
+        <div style="font-size:11px;color:var(--text-sub);display:flex;align-items:center;gap:10px;margin-bottom:10px">
+          <span style="display:flex;align-items:center;gap:3px"><i data-lucide="map-pin" style="width:10px;height:10px"></i> 전국</span>
+          <span style="display:flex;align-items:center;gap:3px;color:var(--danger);font-weight:700"><i data-lucide="calendar" style="width:10px;height:10px"></i> D-3</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:5px">
+          <span style="font-size:10px;font-weight:600;padding:2px 8px;border-radius:6px;background:#E8F5E9;color:#2E7D32">#R&amp;D</span>
+          <span style="font-size:10px;font-weight:600;padding:2px 8px;border-radius:6px;background:#E3F2FD;color:#1565C0">#GPU</span>
+          <span style="font-size:10px;font-weight:600;padding:2px 8px;border-radius:6px;background:#FFF3E0;color:#E65100">#기후변화</span>
+        </div>
+      </div>
+
+      <div style="background:var(--bg);border-radius:10px;padding:14px 16px;border:1.5px solid var(--border)">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px">
+          <span style="font-size:11px;font-weight:700;padding:3px 8px;border-radius:10px;background:#1976D2;color:white">매칭 68%</span>
+          <i data-lucide="bookmark" style="width:14px;height:14px;color:var(--accent);fill:var(--accent)"></i>
+        </div>
+        <div style="font-size:13px;font-weight:700;color:var(--text);line-height:1.45;margin-bottom:8px">중소기업 디지털전환 가속화 지원사업</div>
+        <div style="font-size:11px;color:var(--text-sub);display:flex;align-items:center;gap:10px;margin-bottom:10px">
+          <span style="display:flex;align-items:center;gap:3px"><i data-lucide="map-pin" style="width:10px;height:10px"></i> 전국</span>
+          <span style="display:flex;align-items:center;gap:3px;color:var(--danger);font-weight:700"><i data-lucide="calendar" style="width:10px;height:10px"></i> D-3</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:5px">
+          <span style="font-size:10px;font-weight:600;padding:2px 8px;border-radius:6px;background:#E3F2FD;color:#1565C0">#AI반도체</span>
+          <span style="font-size:10px;font-weight:600;padding:2px 8px;border-radius:6px;background:#EDE7F6;color:#6A1B9A">#디지털전환</span>
+          <span style="font-size:10px;font-weight:600;padding:2px 8px;border-radius:6px;background:#E3F2FD;color:#1565C0">#창업지원</span>
+        </div>
+      </div>
+
+      <div style="background:var(--bg);border-radius:10px;padding:14px 16px;border:1.5px solid var(--border)">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px">
+          <span style="font-size:11px;font-weight:700;padding:3px 8px;border-radius:10px;background:#90A4AE;color:white">매칭 61%</span>
+          <i data-lucide="bookmark" style="width:14px;height:14px;color:var(--accent);fill:var(--accent)"></i>
+        </div>
+        <div style="font-size:13px;font-weight:700;color:var(--text);line-height:1.45;margin-bottom:8px">AI 응용제품 신속 상용화 지원사업 참여기업 모집</div>
+        <div style="font-size:11px;color:var(--text-sub);display:flex;align-items:center;gap:10px;margin-bottom:10px">
+          <span style="display:flex;align-items:center;gap:3px"><i data-lucide="map-pin" style="width:10px;height:10px"></i> 전국</span>
+          <span style="display:flex;align-items:center;gap:3px"><i data-lucide="calendar" style="width:10px;height:10px"></i> ~2026-04-15</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:5px">
+          <span style="font-size:10px;font-weight:600;padding:2px 8px;border-radius:6px;background:#E3F2FD;color:#1565C0">#AI반도체</span>
+          <span style="font-size:10px;font-weight:600;padding:2px 8px;border-radius:6px;background:#E8F5E9;color:#2E7D32">#R&amp;D</span>
+          <span style="font-size:10px;font-weight:600;padding:2px 8px;border-radius:6px;background:#FFF3E0;color:#E65100">#수출</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
 </body></html>
